@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092) -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>내가 주를 사랑합니다 — 2026 온세대 추수감사예배</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link rel="stylesheet" href="./fonts.css">
+<style>
+:root{
+  --bg:#faf6ef; --surface:#fffdf9; --surface2:#f3ecdf; --sunken:#efe7d8;
+  --text:#1b2434; --dim:#5d6674; --faint:#8b8f97;
+  --line:#ded4c3; --line2:#cbbfa9;
+  --ember:#b0521a; --ember-ink:#8c3f12; --ember-wash:#f6e6d6;
+  --sea:#1f4a5c; --rope:#7d6749;
+  --m1:#2b5f70; --m2:#3d8497; --m3:#6b5a45; --m4:#a34f22; --m5:#c9631a; --m6:#d98b45;
+  --ok:#2f6b46; --warn:#a06a10; --crit:#9b3226;
+  --ok-wash:#e3efe6; --warn-wash:#f7ecd5; --crit-wash:#f7e3df;
+  --shadow:0 1px 2px rgba(27,36,52,.06),0 6px 18px -10px rgba(27,36,52,.18);
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --bg:#0c1523; --surface:#131f30; --surface2:#1a2a40; --sunken:#0f1a2a;
+  --text:#e9e3d6; --dim:#9aa5b6; --faint:#6d7789;
+  --line:#25364e; --line2:#33475f;
+  --ember:#f0913f; --ember-ink:#f6ac68; --ember-wash:#2a1c11;
+  --sea:#6fb8c9; --rope:#b09472;
+  --m1:#4d94a8; --m2:#6fb8c9; --m3:#a08260; --m4:#d4713a; --m5:#ef8f3e; --m6:#f5ad68;
+  --ok:#6fc08e; --warn:#e0b04c; --crit:#e8776a;
+  --ok-wash:#152a1f; --warn-wash:#2b2312; --crit-wash:#2d1a17;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.6);
+}}
+:root[data-theme="dark"]{
+  --bg:#0c1523; --surface:#131f30; --surface2:#1a2a40; --sunken:#0f1a2a;
+  --text:#e9e3d6; --dim:#9aa5b6; --faint:#6d7789;
+  --line:#25364e; --line2:#33475f;
+  --ember:#f0913f; --ember-ink:#f6ac68; --ember-wash:#2a1c11;
+  --sea:#6fb8c9; --rope:#b09472;
+  --m1:#4d94a8; --m2:#6fb8c9; --m3:#a08260; --m4:#d4713a; --m5:#ef8f3e; --m6:#f5ad68;
+  --ok:#6fc08e; --warn:#e0b04c; --crit:#e8776a;
+  --ok-wash:#152a1f; --warn-wash:#2b2312; --crit-wash:#2d1a17;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:'IBM Plex Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+  font-weight:400; font-size:15px; line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:'Gowun Batang','Nanum Myeongjo',serif; font-weight:700; text-wrap:balance; margin:0; line-height:1.35}
+.mono{font-family:'IBM Plex Mono',monospace; font-variant-numeric:tabular-nums}
+
+/* ── shell ─────────────────────────────── */
+.wrap{max-width:1180px; margin:0 auto; padding-inline:20px}
+.shell{display:grid; grid-template-columns:216px minmax(0,1fr); gap:44px; align-items:start}
+@media(max-width:900px){ .shell{grid-template-columns:1fr; gap:0} }
+
+/* ── top bar ───────────────────────────── */
+.topbar{
+  position:sticky; top:0; z-index:40; background:var(--bg);
+  border-bottom:1px solid var(--line);
+}
+.topbar-in{display:flex; align-items:center; gap:18px; flex-wrap:wrap; padding-block:10px}
+.brandmark{display:flex; align-items:center; gap:9px; font-size:12.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--dim); font-weight:600}
+.brandmark svg{flex:none}
+.dcount{margin-left:auto; display:flex; align-items:baseline; gap:8px}
+.dcount b{font-family:'IBM Plex Mono',monospace; font-size:20px; color:var(--ember); font-weight:500; letter-spacing:-.01em}
+.dcount span{font-size:12px; color:var(--faint)}
+
+/* ── hero ──────────────────────────────── */
+.hero{padding-block:52px 40px; border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--ember); font-weight:600; margin-bottom:16px}
+.hero h1{font-size:clamp(38px,7vw,64px); letter-spacing:-.015em; margin-bottom:6px}
+.hero .sub{font-family:'Gowun Batang',serif; font-size:clamp(17px,2.4vw,21px); color:var(--dim); margin-bottom:26px}
+.hero-meta{display:flex; flex-wrap:wrap; gap:10px 26px; font-size:13.5px; color:var(--dim); padding-top:22px; border-top:1px solid var(--line)}
+.hero-meta div{display:flex; gap:8px}
+.hero-meta dt{color:var(--faint); font-size:12px; letter-spacing:.05em}
+.hero-meta dd{margin:0; font-weight:500; color:var(--text)}
+
+/* ── nav ───────────────────────────────── */
+nav.side{position:sticky; top:58px; padding-block:36px; font-size:13.5px}
+nav.side ol{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1px}
+nav.side a{
+  display:flex; gap:10px; padding:6px 10px; border-radius:5px;
+  color:var(--dim); text-decoration:none; border-left:2px solid transparent; transition:.15s;
+}
+nav.side a .n{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--faint); padding-top:2px}
+nav.side a:hover{background:var(--surface2); color:var(--text)}
+nav.side a.on{color:var(--ember); border-left-color:var(--ember); background:var(--ember-wash); font-weight:600}
+nav.side a.on .n{color:var(--ember)}
+@media(max-width:900px){
+  nav.side{position:sticky; top:41px; z-index:30; padding-block:0; background:var(--bg); border-bottom:1px solid var(--line); margin-inline:-20px; padding-inline:20px}
+  nav.side ol{flex-direction:row; overflow-x:auto; gap:2px; scrollbar-width:none; padding-block:8px}
+  nav.side ol::-webkit-scrollbar{display:none}
+  nav.side a{white-space:nowrap; border-left:none; border-bottom:2px solid transparent; border-radius:4px 4px 0 0; padding:5px 9px}
+  nav.side a .n{display:none}
+  nav.side a.on{border-left-color:transparent; border-bottom-color:var(--ember)}
+}
+
+/* ── sections ──────────────────────────── */
+main{padding-block:36px 90px; min-width:0}
+section{padding-block:26px 46px; scroll-margin-top:100px}
+section+section{border-top:1px solid var(--line)}
+.sec-head{display:flex; align-items:baseline; gap:12px; margin-bottom:8px}
+.sec-num{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ember); font-weight:500; padding-top:5px}
+.sec-head h2{font-size:clamp(24px,3.4vw,31px); letter-spacing:-.01em}
+.lede{color:var(--dim); max-width:62ch; margin:0 0 30px; font-size:15.5px}
+h3{font-size:18px; margin:36px 0 12px; letter-spacing:-.005em}
+h3:first-of-type{margin-top:0}
+h4{font-size:14.5px; margin:22px 0 7px; font-family:'IBM Plex Sans KR',sans-serif; font-weight:600}
+p{margin:0 0 14px; max-width:66ch}
+.note{font-size:13px; color:var(--faint); max-width:66ch}
+strong{font-weight:600}
+em{font-style:normal; color:var(--ember); font-weight:500}
+
+/* ── scripture ─────────────────────────── */
+.scripture{
+  font-family:'Gowun Batang',serif; font-size:19px; line-height:1.85;
+  padding:24px 0 20px 26px; border-left:3px solid var(--ember); margin:0 0 26px;
+  max-width:60ch;
+}
+.scripture cite{display:block; font-family:'IBM Plex Mono',monospace; font-style:normal; font-size:12px; color:var(--faint); margin-top:14px; letter-spacing:.03em}
+.pull{font-family:'Gowun Batang',serif; font-size:clamp(20px,3vw,26px); line-height:1.55; color:var(--ember-ink); max-width:24ch; margin:32px 0}
+
+/* ── ladder svg ────────────────────────── */
+.ladder{width:100%; max-width:600px; height:auto; margin:8px 0 30px; display:block}
+.netfig{width:100%; max-width:640px; height:auto; margin:10px 0 30px; display:block}
+.netfig text{font-family:'IBM Plex Sans KR',sans-serif}
+.ladder text{font-family:'IBM Plex Sans KR',sans-serif}
+
+/* ── act table ─────────────────────────── */
+.acts{display:flex; flex-direction:column; gap:0; margin:8px 0 8px; border-top:1px solid var(--line)}
+.act{display:grid; grid-template-columns:74px 1fr 1.15fr; gap:16px; padding:13px 0 13px 12px; border-bottom:1px solid var(--line); border-left:3px solid var(--mc); align-items:baseline}
+.act .k{font-family:'Gowun Batang',serif; font-weight:700; font-size:15px; color:var(--mc)}
+.act .v{font-family:'Gowun Batang',serif; font-size:15px}
+.act .r{font-size:13px; color:var(--dim)}
+.act .r b{font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:11.5px; color:var(--faint); display:block; letter-spacing:.02em}
+@media(max-width:660px){ .act{grid-template-columns:64px 1fr; gap:6px 12px} .act .r{grid-column:1/-1; padding-left:0} }
+
+/* ── plan switch ───────────────────────── */
+.switch{display:flex; gap:0; margin:0 0 22px; border:1px solid var(--line2); border-radius:7px; overflow:hidden; width:fit-content; max-width:100%}
+.switch button{
+  font-family:inherit; font-size:13.5px; font-weight:500; padding:9px 18px; border:0; cursor:pointer;
+  background:var(--surface); color:var(--dim); transition:.15s; white-space:nowrap;
+}
+.switch button+button{border-left:1px solid var(--line2)}
+.switch button[aria-pressed="true"]{background:var(--ember); color:#fff}
+:root[data-theme="dark"] .switch button[aria-pressed="true"]{color:#17222f}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .switch button[aria-pressed="true"]{color:#17222f} }
+.switch button:focus-visible{outline:2px solid var(--ember); outline-offset:-2px}
+
+.plan-note{background:var(--surface2); border-radius:8px; padding:15px 18px; font-size:13.5px; color:var(--dim); margin-bottom:24px; border-left:3px solid var(--line2)}
+.plan-note b{color:var(--text); font-weight:600}
+
+/* ── cue rail ──────────────────────────── */
+.rail{border-top:1px solid var(--line)}
+.cue{display:grid; grid-template-columns:52px 12px 1fr auto; gap:0 14px; padding:14px 0; border-bottom:1px solid var(--line); align-items:start}
+.cue .t{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--faint); padding-top:3px; text-align:right}
+.cue .bar{width:4px; border-radius:2px; background:var(--mc); align-self:stretch; min-height:26px; margin-left:4px}
+.cue .body{min-width:0}
+.cue .name{font-family:'Gowun Batang',serif; font-weight:700; font-size:16px; margin-bottom:3px}
+.cue .tag{display:inline-block; font-size:10.5px; letter-spacing:.06em; color:var(--mc); border:1px solid var(--mc); border-radius:3px; padding:1px 5px; margin-left:8px; vertical-align:2px; font-weight:600}
+.cue .desc{font-size:13.5px; color:var(--dim); line-height:1.62}
+.cue .desc mark{background:var(--ember-wash); color:var(--ember-ink); padding:0 3px; border-radius:2px; font-weight:600}
+.cue .min{font-family:'IBM Plex Mono',monospace; font-size:14px; color:var(--text); padding-top:2px; white-space:nowrap}
+.cue.new{background:linear-gradient(90deg,var(--ember-wash),transparent 70%)}
+.cue-total{display:flex; justify-content:space-between; align-items:baseline; padding:15px 0; font-size:13.5px; color:var(--dim)}
+.cue-total b{font-family:'IBM Plex Mono',monospace; font-size:19px; color:var(--text); font-weight:500}
+@media(max-width:660px){
+  .cue{grid-template-columns:44px 10px 1fr; gap:0 10px}
+  .cue .min{grid-column:3; text-align:right; margin-top:-24px; font-size:12.5px; color:var(--faint)}
+}
+
+/* ── climax cards ──────────────────────── */
+.climax{display:flex; flex-direction:column; gap:0; margin-top:8px}
+.cx{border-top:1px solid var(--line); padding-block:26px}
+.cx-head{display:flex; align-items:baseline; gap:12px; margin-bottom:14px; flex-wrap:wrap}
+.cx-head .id{font-family:'IBM Plex Mono',monospace; font-size:11px; color:#fff; background:var(--ember); border-radius:3px; padding:2px 7px; font-weight:500}
+:root[data-theme="dark"] .cx-head .id{color:#17222f}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) .cx-head .id{color:#17222f} }
+.cx-head h3{margin:0; font-size:20px}
+.cx-head .when{font-size:12px; color:var(--faint); font-family:'IBM Plex Mono',monospace; margin-left:auto}
+
+.script{background:var(--sunken); border-radius:9px; padding:18px 20px; margin:16px 0; font-size:14px}
+.script .lbl{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--faint); font-weight:600; margin-bottom:10px}
+.script ol{margin:0; padding-left:20px; display:flex; flex-direction:column; gap:9px}
+.script li::marker{color:var(--ember); font-family:'IBM Plex Mono',monospace; font-size:12px}
+.script .say{font-family:'Gowun Batang',serif; font-size:15.5px; color:var(--text); display:block; padding:8px 0 4px}
+
+.kit{display:flex; flex-wrap:wrap; gap:6px; margin:14px 0 0}
+.kit span{font-size:12px; background:var(--surface2); border:1px solid var(--line); border-radius:20px; padding:3px 11px; color:var(--dim)}
+.kit span b{color:var(--text); font-weight:600; font-family:'IBM Plex Mono',monospace; font-size:11.5px}
+
+/* ── generic table ─────────────────────── */
+.tbl-wrap{overflow-x:auto; margin:14px 0 6px}
+table{border-collapse:collapse; width:100%; font-size:13.5px; min-width:520px}
+th{text-align:left; font-weight:600; font-size:11.5px; letter-spacing:.07em; text-transform:uppercase; color:var(--faint); padding:0 14px 9px 0; border-bottom:1px solid var(--line2); white-space:nowrap}
+td{padding:11px 14px 11px 0; border-bottom:1px solid var(--line); vertical-align:top; line-height:1.6}
+td:first-child{font-weight:500}
+tr:last-child td{border-bottom:0}
+td .was{color:var(--faint); text-decoration:line-through; font-size:12.5px}
+td .now{color:var(--ember-ink); font-weight:600}
+:root[data-theme="dark"] td .now{color:var(--ember)}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]) td .now{color:var(--ember)} }
+
+/* ── q cards ───────────────────────────── */
+.qgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:9px; overflow:hidden; margin:16px 0}
+.q{background:var(--surface); padding:17px 19px}
+.q .gen{font-size:11px; letter-spacing:.09em; color:var(--ember); font-weight:700; margin-bottom:9px}
+.q .ask{font-family:'Gowun Batang',serif; font-size:15.5px; line-height:1.6; margin-bottom:9px}
+.q .why{font-size:12.5px; color:var(--faint); line-height:1.55}
+
+/* ── storyboard ────────────────────────── */
+.board{border-top:1px solid var(--line); margin:16px 0 0}
+.shot{display:grid; grid-template-columns:78px 1fr; gap:16px; padding:14px 0; border-bottom:1px solid var(--line)}
+.shot .tc{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ember); padding-top:2px}
+.shot .sc{font-size:14px; line-height:1.65}
+.shot .au{font-size:12.5px; color:var(--faint); margin-top:4px}
+.shot .cap{font-family:'Gowun Batang',serif; color:var(--text); font-size:15px}
+
+/* ── timeline ──────────────────────────── */
+.tl{margin:18px 0 0; border-left:2px solid var(--line2); padding-left:0}
+.tl-row{display:grid; grid-template-columns:96px 1fr; gap:18px; padding:0 0 22px 22px; position:relative}
+.tl-row::before{content:""; position:absolute; left:-6px; top:6px; width:10px; height:10px; border-radius:50%; background:var(--bg); border:2px solid var(--line2)}
+.tl-row.hot::before{background:var(--ember); border-color:var(--ember)}
+.tl-row .when{font-family:'IBM Plex Mono',monospace; font-size:12.5px; color:var(--ember); font-weight:500}
+.tl-row .when small{display:block; color:var(--faint); font-size:11px; font-weight:400}
+.tl-row .what{font-size:14px}
+.tl-row .what b{font-weight:600; display:block; margin-bottom:3px}
+.tl-row .what span{color:var(--dim); font-size:13px}
+@media(max-width:560px){ .tl-row{grid-template-columns:1fr; gap:3px} }
+
+/* ── checklist ─────────────────────────── */
+.ck-head{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap; margin:0 0 14px}
+.ck-prog{display:flex; align-items:center; gap:11px; font-size:12.5px; color:var(--dim)}
+.ck-bar{width:130px; height:5px; border-radius:3px; background:var(--sunken); overflow:hidden}
+.ck-bar i{display:block; height:100%; background:var(--ember); width:0; transition:width .3s}
+.ck-sync{font-size:11.5px; color:var(--faint); display:flex; align-items:center; gap:6px}
+.ck-sync::before{content:""; width:6px; height:6px; border-radius:50%; background:var(--faint)}
+.ck-sync.live::before{background:var(--ok)}
+.ck-list{border-top:1px solid var(--line)}
+.ck{display:flex; gap:12px; align-items:flex-start; padding:11px 0; border-bottom:1px solid var(--line)}
+.ck input{margin:4px 0 0; width:16px; height:16px; accent-color:var(--ember); cursor:pointer; flex:none}
+.ck label{cursor:pointer; font-size:14px; line-height:1.55; flex:1; min-width:0}
+.ck label small{display:block; color:var(--faint); font-size:12px; margin-top:1px}
+.ck .owner{font-size:11px; color:var(--dim); background:var(--surface2); border-radius:20px; padding:2px 9px; white-space:nowrap; align-self:center; flex:none}
+.ck input:checked+label{color:var(--faint); text-decoration:line-through; text-decoration-color:var(--line2)}
+.ck input:checked+label small{text-decoration:none}
+
+
+/* ── net visual (04) ───────────────────── */
+.place-wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:18px;align-items:start;margin:12px 0}
+@media(max-width:900px){.place-wrap{grid-template-columns:1fr}}
+.placefig{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface);box-shadow:var(--shadow)}
+.place-note{font-size:13.5px;color:var(--dim)}
+.place-note ol{margin:8px 0 6px;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.place-note b{color:var(--text)}
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0}
+@media(max-width:900px){.steps3{grid-template-columns:1fr}}
+.step-card{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
+.step-card svg{width:100%;height:auto;display:block;background:var(--surface2);border-bottom:1px solid var(--line)}
+.step-card>div{padding:10px 12px;font-size:13px;color:var(--dim)}
+.step-card b{color:var(--text);font-size:13.5px}
+.step-card p{margin:4px 0 0}
+.flow5{list-style:none;margin:12px 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.flow5 li{display:grid;grid-template-columns:110px 1fr;gap:10px;align-items:baseline;border:1px solid var(--line);border-radius:8px;padding:9px 12px;background:var(--surface)}
+.flow5 b{font-size:13.5px}
+.flow5 span{font-size:13px;color:var(--dim)}
+@media(max-width:600px){.flow5 li{grid-template-columns:1fr;gap:2px}}
+details.spec{margin-top:14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:10px 14px}
+details.spec summary{cursor:pointer;font-weight:600;font-size:14px}
+details.spec .tbl-wrap{margin-top:10px}
+
+/* ── risk ──────────────────────────────── */
+.risks{display:flex; flex-direction:column; gap:0; border-top:1px solid var(--line); margin-top:10px}
+.risk{display:grid; grid-template-columns:auto 1fr; gap:0 15px; padding:16px 0; border-bottom:1px solid var(--line)}
+.sev{font-size:10.5px; font-weight:700; letter-spacing:.06em; border-radius:3px; padding:2px 7px; height:fit-content; margin-top:2px; white-space:nowrap}
+.sev.hi{background:var(--crit-wash); color:var(--crit)}
+.sev.mid{background:var(--warn-wash); color:var(--warn)}
+.sev.lo{background:var(--ok-wash); color:var(--ok)}
+.risk .rb b{display:block; font-weight:600; font-size:14.5px; margin-bottom:4px}
+.risk .rb p{margin:0; font-size:13.5px; color:var(--dim)}
+.risk .rb .fix{margin-top:7px; font-size:13.5px; color:var(--text); padding-left:16px; position:relative}
+.risk .rb .fix::before{content:"→"; position:absolute; left:0; color:var(--ember); font-family:'IBM Plex Mono',monospace}
+
+footer{border-top:1px solid var(--line); padding-block:26px 0; font-size:12.5px; color:var(--faint)}
+footer p{max-width:70ch}
+a{color:var(--ember)}
+:focus-visible{outline:2px solid var(--ember); outline-offset:2px; border-radius:3px}
+@media(prefers-reduced-motion:reduce){ *{transition:none!important; animation:none!important} }
+</style>
+
+<div class="topbar"><div class="wrap"><div class="topbar-in">
+  <div class="brandmark">
+    <svg width="15" height="17" viewBox="0 0 15 17" fill="none" aria-hidden="true">
+      <path d="M7.5 1v15M1.5 5.5h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"></path>
+    </svg>
+    2026 온세대 추수감사예배
+  </div>
+  <div class="dcount"><b id="dday">D-64</b><span id="ddate">2026. 11. 15. 주일</span></div>
+</div></div></div>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">기획 개정안 · 컨셉「베드로의 고백」</div>
+    <h1>내가 주를 사랑합니다</h1>
+    <p class="sub">감사는 받은 것에 대한 계산이 아니라, 나를 사랑하신 분께 드리는 응답이다.</p>
+    <dl class="hero-meta">
+      <div><dt>예배일</dt><dd>2026. 11. 15. (주일) <strong>오후 2시</strong></dd></div>
+      <div><dt>총 길이</dt><dd class="mono">80분 (14:00–15:20)</dd></div>
+      <div><dt>대상</dt><dd>영아부 ~ 장년부 8개 부서</dd></div>
+      <div><dt>주제곡</dt><dd>아가파오 워십 「베드로의 고백」</dd></div>
+    </dl>
+  </header>
+
+  <div class="shell">
+    <nav class="side" aria-label="목차"><ol>
+      <li><a href="#concept" class="on"><span class="n">01</span>컨셉</a></li>
+      <li><a href="#order" class=""><span class="n">02</span>예배 순서</a></li>
+      <li><a href="#climax" class=""><span class="n">03</span>클라이맥스 연출</a></li>
+      <li><a href="#net" class=""><span class="n">04</span>그물 십자가</a></li>
+      <li><a href="#pre" class=""><span class="n">05</span>사전 준비</a></li>
+      <li><a href="#around" class=""><span class="n">06</span>전후 행사</a></li>
+      <li><a href="#sched" class=""><span class="n">07</span>일정 · 체크리스트</a></li>
+      <li><a href="#risk" class=""><span class="n">08</span>리스크</a></li>
+    </ol></nav>
+
+    <main>
+
+<!-- ══ 01 컨셉 ══════════════════════════ -->
+<section id="concept">
+  <div class="sec-head"><span class="sec-num">01</span><h2>컨셉</h2></div>
+  <p class="lede">초안의 방향(Giver-Centered)은 옳다. 다만 <strong>“왜 감사를 그분께 돌려야 하는가”</strong>를 설명하는 서사가 없었다. 「베드로의 고백」이 그 자리를 메운다.</p>
+
+  <blockquote class="scripture">
+    “요한의 아들 시몬아 네가 이 사람들보다 나를 더 사랑하느냐 … 주님 그러하나이다 내가 주님을 사랑하는 줄 주님께서 아시나이다”
+    <cite>요한복음 21:15–17</cite>
+  </blockquote>
+
+  <h3>감사의 네 층위</h3>
+  <p>초안이 이미 1층에서 3층으로 올라섰다. 이번 개정은 <em>4층</em>까지 올린다. 아래 계단이 예배 전체의 설계도다.</p>
+
+  <svg class="ladder" viewBox="0 0 600 250" role="img" aria-label="감사의 네 층위 계단 다이어그램: 결실 감사, 보호 감사, 존재 감사, 사랑 감사 순으로 상승">
+    <g font-size="13" font-weight="600">
+      <rect x="10" y="196" width="140" height="42" rx="4" fill="var(--surface2)" stroke="var(--line)"></rect>
+      <text x="26" y="216" fill="var(--dim)">1층 · 결실 감사</text>
+      <text x="26" y="231" fill="var(--faint)" font-size="11" font-weight="400">올해 받은 것</text>
+
+      <rect x="150" y="152" width="140" height="86" rx="4" fill="var(--surface2)" stroke="var(--line)"></rect>
+      <text x="166" y="172" fill="var(--dim)">2층 · 보호 감사</text>
+      <text x="166" y="187" fill="var(--faint)" font-size="11" font-weight="400">지켜주심</text>
+
+      <rect x="290" y="108" width="140" height="130" rx="4" fill="var(--surface2)" stroke="var(--line)"></rect>
+      <text x="306" y="128" fill="var(--dim)">3층 · 존재 감사</text>
+      <text x="306" y="143" fill="var(--faint)" font-size="11" font-weight="400">하나님이 하나님 되심</text>
+      <text x="306" y="159" fill="var(--faint)" font-size="10" font-weight="400">— 초안이 도달한 지점</text>
+
+      <rect x="430" y="42" width="160" height="196" rx="4" fill="var(--ember-wash)" stroke="var(--ember)" stroke-width="1.5"></rect>
+      <text x="447" y="63" fill="var(--ember-ink)">4층 · 사랑 감사</text>
+      <text x="447" y="79" fill="var(--ember-ink)" font-size="11" font-weight="400">하늘 보좌 버리고</text>
+      <text x="447" y="94" fill="var(--ember-ink)" font-size="11" font-weight="400">나를 사랑하심</text>
+      <text x="447" y="115" fill="var(--ember)" font-size="10" font-weight="600">이번 예배의 정점</text>
+    </g>
+    <path d="M20 30 L575 30" stroke="var(--line2)" stroke-width="1" stroke-dasharray="3 4"></path>
+    <text x="20" y="22" font-size="10.5" fill="var(--faint)" font-weight="500">감사의 대상이 ‘선물’에서 ‘주신 분’으로 옮겨간다</text>
+  </svg>
+
+  <h3>가사가 이미 예배 순서다</h3>
+  <p>주제곡을 뜯어보면 6막 구조가 그대로 나온다. 순서·설교·봉헌·공간이 이 서사 하나를 따라간다.</p>
+
+  <div class="acts">
+    <div class="act" style="--mc:var(--m1)"><span class="k">1막 부르심</span><span class="v">내 그물 버리고</span><span class="r">그물을 버려두고 따라나선 첫날<b>눅 5:1–11</b></span></div>
+    <div class="act" style="--mc:var(--m2)"><span class="k">2막 동행</span><span class="v">예수를 닮아 가는 일</span><span class="r">평생을 두고 함께 걷는 길<b>요 1:43</b></span></div>
+    <div class="act" style="--mc:var(--m3)"><span class="k">3막 붙드심</span><span class="v">날 놓지 않으심 감사</span><span class="r">세 번 부인한 자를 돌이켜 보심<b>눅 22:54–62</b></span></div>
+    <div class="act" style="--mc:var(--m4)"><span class="k">4막 질문</span><span class="v">니가 나를 사랑하느냐</span><span class="r">숯불 앞, 회복의 세 번 질문<b>요 21:15–17</b></span></div>
+    <div class="act" style="--mc:var(--m5)"><span class="k">5막 고백</span><span class="v">내가 주를 사랑합니다</span><span class="r">감사가 사랑의 응답으로 바뀌는 자리<b>요 21:17</b></span></div>
+    <div class="act" style="--mc:var(--m6)"><span class="k">6막 파송</span><span class="v">남은 모든 인생을 함께</span><span class="r">“내 양을 먹이라 · 나를 따르라”<b>요 21:19</b></span></div>
+  </div>
+  <p class="note">막 색은 물빛(갈릴리 새벽)에서 불빛(숯불)으로 이동한다. 순서표·조명·영상 톤이 같은 색 순서를 따른다.</p>
+
+  <h3>시각 컨셉 전환 — 「뿌리와 열매」에서 「그물과 숯불」로</h3>
+  <p>초안의 <span class="mono">결실 배열 십자가</span>는 아름답지만 여전히 <strong>1층 감사의 이미지</strong>다. 시선이 열매에 머문다. 컨셉의 정점과 맞물리려면 소재를 바꿔야 한다.</p>
+  <div class="tbl-wrap"><table>
+    <tbody><tr><th>요소</th><th>초안</th><th>개정</th><th>근거</th></tr>
+    <tr><td>메인 오브제</td><td class="was">과일·볏단 십자가</td><td class="now">십자가에 걸린 거친 어망</td><td>받은 것이 아니라 <strong>내려놓은 것</strong>이 강단에 올라간다</td></tr>
+    <tr><td>보조 오브제</td><td class="was">—</td><td class="now">어망 아래 숯불 하나</td><td>요 21:9 — 회복의 조찬이 벌어진 자리</td></tr>
+    <tr><td>대표 카피</td><td class="was">“모든 것이 은혜입니다”</td><td class="now">“내가 주를 사랑합니다”</td><td>은혜 서술 → <strong>1인칭 응답</strong></td></tr>
+    <tr><td>컬러</td><td>남색 · 주황 · 아이보리</td><td class="now">그대로 유지</td><td>초안 팔레트가 이미 ‘새벽 바다와 숯불’이다</td></tr>
+  </tbody></table></div>
+  <p class="pull">받은 것을 세는 예배에서, 부르신 분께 답하는 예배로.</p>
+</section>
+
+<!-- ══ 02 순서 ══════════════════════════ -->
+<section id="order">
+  <div class="sec-head"><span class="sec-num">02</span><h2>예배 순서</h2></div>
+  <p class="lede"><strong>1안 확정 · 80분 고정 (14:00–15:20)</strong> — 순서 자체를 6막으로 재설계한다. 클라이맥스 3종(릴레이 고백 · 그물 · 고백 카드)을 모두 포함한다.</p>
+
+  <div class="switch" role="group" aria-label="기획안 선택" hidden>
+    <button id="btn-a" aria-pressed="true">1안 확정 · 전면 재구성</button>
+    <button id="btn-b" aria-pressed="false" tabindex="-1">폐기안(숨김)</button>
+  </div>
+
+  <div id="pane-a">
+    <div class="plan-note"><b>1안 확정 — 순서 자체를 6막으로 재설계한다.</b> 예배 전체가 하나의 이야기로 흐른다. 순서 이름·개수가 바뀌므로 당회·부서 설득과 순서자 재섭외(릴레이 성경봉독 6명 추가)가 필요하다.</div>
+    <div class="rail" id="rail-a"><div class="cue new" style="--mc:var(--m1)"><div class="t mono">0′</div><div class="bar"></div><div class="body"><div class="name">예배 선포 영상 「그 날, 바닷가에서」<span class="tag">교체</span></div><div class="desc"><span style="color:var(--m1);font-weight:600">1막 부르심</span> · 빈 그물에서 시작해 <mark>“네가 나를 사랑하느냐”</mark>로 닫는 4분 30초. 초안의 카운트다운을 대체한다.</div></div><div class="min mono">5분</div></div><div class="cue new" style="--mc:var(--m1)"><div class="t mono">5′</div><div class="bar"></div><div class="body"><div class="name">부르심 선포 · 기원<span class="tag">신설</span></div><div class="desc"><span style="color:var(--m1);font-weight:600">1막 부르심</span> · 눅 5:11 봉독과 함께 예배 선포. “오늘 우리는 받은 것을 세러 온 것이 아니라, 부르신 분께 답하러 왔습니다.”</div></div><div class="min mono">3분</div></div><div class="cue" style="--mc:var(--m2)"><div class="t mono">8′</div><div class="bar"></div><div class="body"><div class="name">찬양 1부 — 부르심과 동행</div><div class="desc"><span style="color:var(--m2);font-weight:600">2막 동행</span> · 3곡. 밝은 톤, 온세대 공통 찬양. 조명 풀.</div></div><div class="min mono">13분</div></div><div class="cue" style="--mc:var(--m2)"><div class="t mono">21′</div><div class="bar"></div><div class="body"><div class="name">세대통합 대표기도</div><div class="desc"><span style="color:var(--m2);font-weight:600">2막 동행</span> · 영아부(부모 대독) + 장년부 대표가 함께 제단에 올라 교차 기도. 초안 연출 유지.</div></div><div class="min mono">5분</div></div><div class="cue new" style="--mc:var(--m3)"><div class="t mono">26′</div><div class="bar"></div><div class="body"><div class="name">찬양 2부 — 실패와 붙드심<span class="tag">신설</span></div><div class="desc"><span style="color:var(--m3);font-weight:600">3막 붙드심</span> · 2곡. 조명 단계적 다운. <mark>9분 초과 금지</mark> — 넘어가면 회개예배가 된다.</div></div><div class="min mono">9분</div></div><div class="cue new" style="--mc:var(--m3)"><div class="t mono">35′</div><div class="bar"></div><div class="body"><div class="name">8부서 릴레이 성경봉독 (요 21:1–19)<span class="tag">신설</span></div><div class="desc"><span style="color:var(--m3);font-weight:600">3막 붙드심</span> · 부서별로 한 단락씩 30초. 마지막 “내 양을 먹이라”는 장년부 대표.</div></div><div class="min mono">4분</div></div><div class="cue new" style="--mc:var(--m4)"><div class="t mono">39′</div><div class="bar"></div><div class="body"><div class="name">설교 「네가 나를 사랑하느냐」<span class="tag">교체</span></div><div class="desc"><span style="color:var(--m4);font-weight:600">4막 질문</span> · 본문 요 21:15–17. 방점은 <mark>“실패한 나를 놓지 않으셨다”</mark>. 24분 하드컷.</div></div><div class="min mono">24분</div></div><div class="cue new" style="--mc:var(--m5)"><div class="t mono">1:03</div><div class="bar"></div><div class="body"><div class="name">찬양팀 특송 「베드로의 고백」<span class="tag">신설</span></div><div class="desc"><span style="color:var(--m5);font-weight:600">5막 고백</span> · 이 동안 회중이 고백 카드를 통로로 전달, 안내위원 12명 수거 완료.</div></div><div class="min mono">5분</div></div><div class="cue new" style="--mc:var(--m5)"><div class="t mono">1:08</div><div class="bar"></div><div class="body"><div class="name">세대별 릴레이 고백<span class="tag">신설</span></div><div class="desc"><span style="color:var(--m5);font-weight:600">5막 고백</span> · 8명 × 25초. 마지막에 <mark>전 회중 제창</mark> — “내가 주를 사랑합니다.”</div></div><div class="min mono">4분</div></div><div class="cue new" style="--mc:var(--m5)"><div class="t mono">1:12</div><div class="bar"></div><div class="body"><div class="name">그물 내려놓기 · 고백 카드 봉헌<span class="tag">교체</span></div><div class="desc"><span style="color:var(--m5);font-weight:600">5막 고백</span> · 안내위원 11명 동시 고정(3분) → 조명 전환, 백라이트로 십자가 발광(2분). 물질 헌금은 별도 봉헌함.</div></div><div class="min mono">5분</div></div><div class="cue new" style="--mc:var(--m6)"><div class="t mono">1:17</div><div class="bar"></div><div class="body"><div class="name">파송 「내 양을 먹이라」 · 축도<span class="tag">신설</span></div><div class="desc"><span style="color:var(--m6);font-weight:600">6막 파송</span> · 요 21:19로 파송. 광고는 주보로 이관.</div></div><div class="min mono">3분</div></div></div>
+    <div class="cue-total"><span>합계</span><b>80분 (14:00–15:20)</b></div><p class="note">※ 14:00 시작 기준 — 0′=14:00, 설교 14:39–15:03, 그물 봉헌 15:12–15:17, 파송 15:17–15:20.</p>
+  </div>
+
+  <div id="pane-b" hidden></div>
+
+  <div class="plan-note"><b>1안으로 확정.</b> 클라이맥스 3종과 사전 준비(영상·카드·그물) 그대로 진행한다. D-4주(10/18)는 프레임 시제작과 자립 안정성 확인에 집중한다.</div>
+</section>
+
+<!-- ══ 03 클라이맥스 ════════════════════ -->
+<section id="climax">
+  <div class="sec-head"><span class="sec-num">03</span><h2>클라이맥스 연출</h2></div>
+  <p class="lede">세 장치가 하나의 동선으로 이어진다. <strong>주님이 묻고(영상) → 부서가 답하고(릴레이) → 회중이 답을 걸어둔다(카드 · 그물)</strong>. 따로 놀면 셋 다 죽는다. 그물 자체의 설계는 <a href="#net">04 그물 십자가</a>에서 따로 다룬다.</p>
+
+  <div class="climax">
+
+    <article class="cx">
+      <div class="cx-head"><span class="id">A</span><h3>세대별 릴레이 고백</h3><span class="when">4–5분 · 설교 직후</span></div>
+      <p>8개 부서 대표가 차례로 마이크 앞에 선다. 길게 말하지 않는다. <strong>한 사람당 25초</strong>, 문장 구조를 통일해 리듬을 만든다.</p>
+      <div class="script">
+        <div class="lbl">대본 틀 · 전원 동일</div>
+        <ol>
+          <li>“저는 ○○부 ○○○입니다.”</li>
+          <li>주님이 나를 놓지 않으신 순간 — <strong>한 문장으로만</strong>.<span class="say">“수능 망친 날 밤에도 기도가 나왔습니다.”</span></li>
+          <li>“그래서, <strong>내가 주를 사랑합니다.</strong>”</li>
+        </ol>
+      </div>
+      <h4>순서 · 8개 부서</h4>
+      <p>영아부(부모가 품에 안고 대독) → 유치부 → 유년부 → 초등부 → 중등부 → 고등부 → 청년부 → 장년부. <strong>장년부 대표가 마지막 문장을 말하면 전 회중이 함께 제창</strong>한다 — 이 한 번의 제창이 예배 전체의 정점이다.</p>
+      <p class="note">영아부를 <strong>맨 앞</strong>에 두는 이유: 말 못 하는 세대의 고백을 부모가 대신 드리는 장면으로 시작해야, 마지막 장년부의 평생 고백과 수미상관이 된다. 장년부 대표는 1~4교구 중 한 명이 맡되, <strong>교구 순번제</strong>로 정하면 형평성 시비가 없다.</p>
+      <p class="note">8명 × 25초 = 3분 20초. 무대 이동을 감안해 <span class="mono">4분</span>으로 잡는다. 4교구를 모두 세우면 11명 5분이 되어 봉헌 시간을 잠식하므로 권장하지 않는다.</p>
+      <div class="kit">
+        <span>스탠드 마이크 <b>1</b></span><span>예비 핀마이크 <b>1</b></span><span>어린이 발판 <b>1</b></span>
+        <span>큰 글씨 대본 카드 <b>8</b></span><span>백업 녹음 <b>8</b></span>
+      </div>
+    </article>
+
+    <article class="cx">
+      <div class="cx-head"><span class="id">B</span><h3>고백 카드</h3><span class="when">D-6주 발주 · 당일 배부</span></div>
+      <p>초안의 ‘감사 카드’를 <strong>사랑 고백 카드</strong>로 전환한다. 무엇을 받았는지가 아니라, 무엇을 내려놓고 누구를 사랑하는지를 적는다.</p>
+      <div class="tbl-wrap"><table>
+        <tbody><tr><th>항목</th><th>사양</th></tr>
+        <tr><td>규격</td><td>90 × 140mm · 엽서지 <span class="mono">200g</span> 이상 <span style="color:var(--faint)">(집게 고정 시 늘어지지 않는 두께)</span></td></tr>
+        <tr><td>앞면</td><td>상단 인쇄 “내가 주를 사랑합니다” / 하단 빈칸 “왜냐하면 주님은 ______”</td></tr>
+        <tr><td>뒷면</td><td>“제가 내려놓을 그물은 ______”</td></tr>
+        <tr><td>색상</td><td>부서별 8색 — 그물에 섞여 걸렸을 때 <strong>세대 통합이 눈으로 보인다</strong></td></tr>
+        <tr><td>장년부</td><td>카드 모서리에 <strong>교구 번호란(1~4)</strong> 인쇄 — 수거·회수 시 교구별 분류에 쓴다</td></tr>
+        <tr><td>영아부</td><td>부모 대필 전용 문구 별도 인쇄 — “우리 아이를 주신 주님께”</td></tr>
+        <tr><td>수량</td><td><span class="mono">500</span>장 <span style="color:var(--faint)">(출석 250~400명 + 예비 25%)</span></td></tr>
+      </tbody></table></div>
+      <p><strong>물질 헌금과 카드는 분리한다.</strong> 헌금은 기존 봉헌함, 카드는 그물. 사회자가 배부 시점과 봉헌 시점 두 번 안내하지 않으면 반드시 섞인다.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ══ 04 그물 십자가 ═══════════════════ -->
+<section id="net">
+  <div class="sec-head"><span class="sec-num">04</span><h2>그물 십자가 — 처음 보는 분을 위한 안내</h2></div>
+  <p class="lede">한 문장으로 말하면 <strong>빈 그물에 고백 카드를 걸어 십자가를 드러내는 장치</strong>입니다. 14:00 예배의 정점은 <strong>15:12–15:17 그물 봉헌</strong>입니다.</p>
+
+  <h3>어디에 세우나요 — 예배당 사진 기준</h3>
+  <div class="place-wrap">
+    <svg class="placefig" viewBox="0 0 600 300" role="img" aria-label="예배당 정면 배치도. 강단 앞 중앙에 그물 십자가를 세우고 스크린과 설교단을 가리지 않는 구조">
+      <rect x="0" y="0" width="600" height="300" rx="8" fill="var(--surface2)"/>
+      <path d="M120 260 L220 40 L300 20 L380 40 L480 260" fill="none" stroke="var(--line2)" stroke-width="2"/>
+      <rect x="250" y="60" width="100" height="60" rx="4" fill="var(--sunken)" stroke="var(--line2)"/>
+      <text x="300" y="86" font-size="11" text-anchor="middle" fill="var(--faint)">스크린</text>
+      <text x="300" y="100" font-size="10" text-anchor="middle" fill="var(--faint)">가리지 않음</text>
+      <rect x="278" y="150" width="44" height="34" rx="2" fill="var(--rope)"/>
+      <text x="300" y="144" font-size="11" text-anchor="middle" fill="var(--dim)">설교단</text>
+      <rect x="400" y="150" width="130" height="40" rx="4" fill="none" stroke="var(--line2)" stroke-dasharray="4 3"/>
+      <text x="465" y="144" font-size="11" text-anchor="middle" fill="var(--dim)">성가대 (우측)</text>
+      <rect x="60" y="210" width="180" height="60" rx="4" fill="none" stroke="var(--line2)"/>
+      <rect x="360" y="210" width="180" height="60" rx="4" fill="none" stroke="var(--line2)"/>
+      <text x="150" y="243" font-size="11" text-anchor="middle" fill="var(--faint)">회중석 (좌)</text>
+      <text x="450" y="243" font-size="11" text-anchor="middle" fill="var(--faint)">회중석 (우)</text>
+      <rect x="290" y="192" width="10" height="78" fill="var(--line2)" opacity="0.5"/>
+      <text x="300" y="286" font-size="10" text-anchor="middle" fill="var(--faint)">중앙 통로</text>
+      <g>
+        <rect x="218" y="186" width="164" height="18" rx="3" fill="#ffcf8a" stroke="#c98a3a" stroke-width="1.5"/>
+        <rect x="218" y="150" width="164" height="60" rx="3" fill="var(--surface)" stroke="#c98a3a" stroke-width="2"/>
+        <path d="M272 154 H304 V172 H322 V192 H304 V206 H272 V192 H254 V172 H272 Z" fill="none" stroke="#c98a3a" stroke-width="1.6" stroke-dasharray="4 2"/>
+        <text x="300" y="140" font-size="12" font-weight="700" text-anchor="middle" fill="var(--ember)">그물 십자가 (강단 앞 중앙)</text>
+      </g>
+    </svg>
+    <div class="place-note">
+      <b>왜 하필 강단 앞 중앙인가요.</b>
+      <ol>
+        <li><strong>스크린·설교단을 가리지 않습니다</strong> — 사진처럼 스크린이 높고 설교단이 중앙에 있어도, 바닥(단상 앞)에 세우면 시야가 그대로 삽니다.</li>
+        <li><strong>전 좌석에서 보입니다</strong> — 좌·우 회중석 중앙선상에 있어 고개만 돌리면 됩니다.</li>
+        <li><strong>통로는 살립니다</strong> — 중앙 통로 끝단에 두되 전면 1m 차단라인을 쳐서 부딪힘을 막습니다.</li>
+      </ol>
+      <p class="note">크기 3.5×2.4m, 하단 바닥+400mm — 맨 뒷자리에서도 십자가 빈자리(600×2,000)가 보입니다.</p>
+    </div>
+  </div>
+
+  <h3>3장으로 이해하기 — 빈 그물 → 카드 → 빛</h3>
+  <div class="steps3">
+    <article class="step-card">
+      <svg viewBox="0 0 200 150" role="img" aria-label="1단계 빈 그물 예시">
+        <rect x="20" y="10" width="160" height="110" fill="var(--surface2)" stroke="var(--rope)" stroke-width="2.5"/>
+        <g stroke="var(--line2)" stroke-width="0.6"><path d="M20 30H180M20 50H180M20 70H180M20 90H180M20 110H180M40 10V120M60 10V120M80 10V120M100 10V120M120 10V120M140 10V120M160 10V120"/></g>
+        <path d="M86 18 H110 V44 H130 V70 H110 V112 H86 V70 H66 V44 H86 Z" fill="none" stroke="#c98a3a" stroke-width="2" stroke-dasharray="5 3"/>
+        <text x="100" y="140" font-size="11" text-anchor="middle" fill="var(--dim)">STEP 1 · 예배 전</text>
+      </svg>
+      <div><b>빈 그물 + 점선 십자가</b><p>백색 로프 8mm로 십자가 윤곽만 표시. 카드를 걸기 전에도 “어, 저기 십자가 자리네?” 하고 보여야 합니다.</p></div>
+    </article>
+    <article class="step-card">
+      <svg viewBox="0 0 200 150" role="img" aria-label="2단계 카드가 차오르는 예시">
+        <rect x="20" y="10" width="160" height="110" fill="var(--surface2)" stroke="var(--rope)" stroke-width="2.5"/>
+        <g><rect x="26" y="16" width="16" height="22" rx="2" fill="#eab89f"/><rect x="46" y="16" width="16" height="22" rx="2" fill="#efd49f"/><rect x="66" y="16" width="16" height="22" rx="2" fill="#cfdca6"/><rect x="118" y="16" width="16" height="22" rx="2" fill="#a8d2bb"/><rect x="138" y="16" width="16" height="22" rx="2" fill="#a4c8d6"/><rect x="158" y="16" width="16" height="22" rx="2" fill="#e0aab4"/><rect x="26" y="42" width="16" height="22" rx="2" fill="#aab8d8"/><rect x="46" y="42" width="16" height="22" rx="2" fill="#c6b0d6"/><rect x="134" y="42" width="16" height="22" rx="2" fill="#efd49f"/><rect x="154" y="42" width="16" height="22" rx="2" fill="#cfdca6"/><rect x="26" y="68" width="16" height="22" rx="2" fill="#a8d2bb"/><rect x="46" y="68" width="16" height="22" rx="2" fill="#eab89f"/><rect x="134" y="68" width="16" height="22" rx="2" fill="#a4c8d6"/><rect x="154" y="68" width="16" height="22" rx="2" fill="#aab8d8"/><rect x="26" y="94" width="16" height="22" rx="2" fill="#c6b0d6"/><rect x="66" y="94" width="16" height="22" rx="2" fill="#e0aab4"/><rect x="118" y="94" width="16" height="22" rx="2" fill="#efd49f"/><rect x="158" y="94" width="16" height="22" rx="2" fill="#cfdca6"/></g>
+        <path d="M86 18 H110 V44 H130 V70 H110 V112 H86 V70 H66 V44 H86 Z" fill="var(--surface2)" stroke="#c98a3a" stroke-width="1.4" stroke-dasharray="4 2"/>
+        <text x="100" y="140" font-size="11" text-anchor="middle" fill="var(--dim)">STEP 2 · 봉헌 중</text>
+      </svg>
+      <div><b>8색 카드가 섞여 걸립니다</b><p>부서별 색이 자유롭게 섞여야 합니다. 구역을 나누지 마세요 — 섞인 그 자체가 세대통합 그림입니다. 200장만 걸려도 십자가는 보입니다.</p></div>
+    </article>
+    <article class="step-card">
+      <svg viewBox="0 0 200 150" role="img" aria-label="3단계 불빛 십자가 예시">
+        <rect x="20" y="10" width="160" height="110" fill="#3a2c1e"/>
+        <g opacity="0.85"><rect x="26" y="16" width="16" height="22" rx="2" fill="#eab89f"/><rect x="46" y="16" width="16" height="22" rx="2" fill="#efd49f"/><rect x="134" y="16" width="16" height="22" rx="2" fill="#a4c8d6"/><rect x="154" y="16" width="16" height="22" rx="2" fill="#e0aab4"/><rect x="26" y="42" width="16" height="22" rx="2" fill="#aab8d8"/><rect x="154" y="42" width="16" height="22" rx="2" fill="#cfdca6"/><rect x="26" y="68" width="16" height="22" rx="2" fill="#a8d2bb"/><rect x="154" y="68" width="16" height="22" rx="2" fill="#aab8d8"/><rect x="26" y="94" width="16" height="22" rx="2" fill="#c6b0d6"/><rect x="66" y="94" width="16" height="22" rx="2" fill="#e0aab4"/><rect x="118" y="94" width="16" height="22" rx="2" fill="#efd49f"/><rect x="158" y="94" width="16" height="22" rx="2" fill="#cfdca6"/></g>
+        <path d="M86 18 H110 V44 H130 V70 H110 V112 H86 V70 H66 V44 H86 Z" fill="#ffcf8a"/>
+        <text x="100" y="140" font-size="11" text-anchor="middle" fill="var(--dim)">STEP 3 · 봉헌 직후</text>
+      </svg>
+      <div><b>조명 다운 → 십자가만 발광</b><p>안내위원이 물러나면 객석·강단 조명을 내리고 뒤 백라이트 2대를 켭니다. 카드가 아니라 빈자리(십자가)가 빛납니다.</p></div>
+    </article>
+  </div>
+  <p class="note">핵심 원리 — <strong>십자가를 그리지 않고 비워둡니다.</strong> 카드로 십자가 모양을 만들면 110~200장밖에 못 걸고, 덜 걸리면 이가 빠진 그림이 됩니다. 비워두면 440장까지 받고, 200장만 걸려도 형태가 삽니다.</p>
+
+  <h3>회중은 이렇게 참여합니다 — 5단계 10분</h3>
+  <ol class="flow5">
+    <li><b>13:20 입장</b><span>의자에서 카드·펜 수령 (부서색 8종). 착석 후 바로 작성.</span></li>
+    <li><b>예배 중 작성</b><span>앞면 “왜냐하면 주님은 __” / 뒷면 “내가 내려놓을 그물은 __”.</span></li>
+    <li><b>특송 중 전달 (5분)</b><span>15:03–15:08 특송 때 통로 쪽으로 카드를 건넵니다. 자리에서 일어나지 않습니다.</span></li>
+    <li><b>봉헌 — 대신 걸어드림 (3분)</b><span>15:12–15:15 안내위원 11명이 동시에 집게로 고정. 회중은 자리에서 지켜봅니다.</span></li>
+    <li><b>제창 (2분)</b><span>불이 켜지면 전 회중 “내가 주를 사랑합니다.” 물질헌금은 별도 봉헌함(그물에 넣지 않음).</span></li>
+  </ol>
+
+  <h3>당일 설치 타임라인 (14:00 예배 기준)</h3>
+  <div class="tl">
+    <div class="tl-row"><div class="when">10:30<small>90분</small></div><div class="what"><b>프레임 반입 · 조립</b><span>봉사자 4명. 후방 지지대 각도 고정까지. 전동 드라이버 2대.</span></div></div>
+    <div class="tl-row"><div class="when">12:00<small>30분</small></div><div class="what"><b>그물 씌우기 · 십자가 경계 표시</b><span>2명. 그물은 팽팽하게 — 늘어지면 카드가 겹쳐 걸립니다.</span></div></div>
+    <div class="tl-row"><div class="when">12:30<small>20분</small></div><div class="what"><b>백라이트 설치 · 조명 큐 확인</b><span>객석에서 십자가 실루엣이 보이는지 실사로 1회 확인.</span></div></div>
+    <div class="tl-row hot"><div class="when">12:50<small>15분</small></div><div class="what"><b>안내위원 12명 최종 브리핑</b><span>수거 구역·고정 위치·신호 확인. <strong>이 브리핑을 건너뛰면 봉헌이 무너집니다.</strong></span></div></div>
+    <div class="tl-row hot"><div class="when">13:05<small>—</small></div><div class="what"><b>카드·집게 배치 완료</b><span>부서색 분류, 집게는 그물 앞 바구니 11개에 분산.</span></div></div>
+    <div class="tl-row hot"><div class="when">13:20<small>—</small></div><div class="what"><b>회중 입장 시작</b><span>입장과 동시에 카드 배부. 14:00 시작 전 대부분 작성 완료.</span></div></div>
+  </div>
+
+  <details class="spec">
+    <summary>실무 스펙 펼치기 — 구조 · 하중 · 조명 · 실패 대응 (담당자용)</summary>
+    <div class="tbl-wrap"><table>
+      <tbody><tr><th>항목</th><th>사양</th><th>비고</th></tr>
+      <tr><td>그물</td><td>3,500 × 2,400mm · 원예 네트 또는 중고 어망</td><td>망목 30~50mm</td></tr>
+      <tr><td>십자가 비움</td><td>세로 600×2,000 / 가로 1,400×600, 중심 바닥+1,900</td><td>경계: 백색 로프 8mm</td></tr>
+      <tr><td>프레임</td><td>각재 38×89mm 또는 각파이프 40×40, 후방 지지대 2개</td><td>A형 자립</td></tr>
+      <tr><td>베이스</td><td>모래주머니 20kg×3 (총 60kg 이상)</td><td>전면 1m 차단라인 필수</td></tr>
+      <tr><td>백라이트</td><td>플러드 2대 3000K, 그물 뒤 1.5m·좌우 45°</td><td>백업 스포트 2대 미리 조준</td></tr>
+      <tr><td>하중</td><td>그물 2.5 + 카드 1.0 + 집게 0.9 + 프레임 25 = 약 29kg</td><td>위험은 무게가 아니라 전도</td></tr>
+    </tbody></table></div>
+    <p class="note">조명 큐 — Q1 예배~설교 OFF(배경) → Q2 특송 20% → Q3 봉헌 60% → Q4 완료 후 객석 다운·백라이트 100% → Q5 파송 유지. 고정 3분 초과 시 미고정분은 바구니째 앞에 두고 예배 후 마무리 (“남은 고백은 예배 후에 함께 겁니다”). 집게 낙하율 D-1주 50장 실측, 5% 초과 시 250g지로 상향. 예배 후 프레임째 대차로 로비 이동 → 1주 포토존.</p>
+  </details>
+</section>
+
+
+<section id="pre">
+  <div class="sec-head"><span class="sec-num">05</span><h2>사전 준비</h2></div>
+  <p class="lede">예배 당일에 회중이 처음 이 질문을 만나면 늦다. <strong>4주 전부터 같은 질문을 던져두고</strong>, 당일에는 답만 하게 한다.</p>
+
+  <h3>질문 패러다임 — 3단 전환</h3>
+  <div class="tbl-wrap"><table>
+    <tbody><tr><th>단계</th><th>질문</th><th>대답의 주어</th></tr>
+    <tr><td>관행</td><td class="was">“올해 어떤 은혜를 누리셨나요?”</td><td>받은 것</td></tr>
+    <tr><td>초안</td><td>“올해 경험하신 하나님은 어떤 분이신가요?”</td><td>하나님의 성품</td></tr>
+    <tr><td><strong>개정</strong></td><td class="now">“주님이 지금 물으신다면, 나는 뭐라고 답할까?”</td><td><strong>나의 응답</strong></td></tr>
+  </tbody></table></div>
+  <p class="note">초안의 전환(선물 → 주신 분)은 옳았다. 다만 여전히 <strong>3인칭 관찰</strong>이다. 개정안은 회중을 대답하는 자리로 끌어온다 — 요한복음 21장에서 베드로가 섰던 그 자리.</p>
+
+  <h3>세대별 질문 카드 · 6종</h3>
+  <div class="qgrid">
+    <div class="q"><div class="gen">영아부</div><div class="ask">이 아이를 주신 주님께, 부모로서 한 문장.</div><div class="why">부모 대필. 아이 이름으로 작성해 당일 그물에 건다.</div></div>
+    <div class="q"><div class="gen">유치부</div><div class="ask">하나님이 나를 꼭 안아주신 것 같은 때는 언제예요?</div><div class="why">선생님이 받아 적는다. 그림으로 답해도 좋다.</div></div>
+    <div class="q"><div class="gen">유년부</div><div class="ask">예수님이 나를 좋아하신다고 느낀 때는 언제였어요?</div><div class="why">‘받은 선물’이 아니라 ‘느낀 애정’을 묻는다.</div></div>
+    <div class="q"><div class="gen">초등부</div><div class="ask">내가 잘못했을 때, 예수님은 어떻게 하셨을까요?</div><div class="why">베드로 이야기를 미리 들려주고 답하게 한다.</div></div>
+    <div class="q"><div class="gen">중등부</div><div class="ask">내가 실수했을 때도 주님이 나를 놓지 않으신 순간은?</div><div class="why">3막(붙드심)의 정서를 미리 심는다.</div></div>
+    <div class="q"><div class="gen">고등부</div><div class="ask">내려놓기 가장 두려운 나의 ‘그물’은 무엇인가요?</div><div class="why">성적·진학·비교. 그물 퍼포먼스와 직결.</div></div>
+    <div class="q"><div class="gen">청년부</div><div class="ask">진로와 사랑 앞에서, 주님께 드릴 한 문장은?</div><div class="why">불안을 신앙 언어로 번역하게 한다.</div></div>
+    <div class="q"><div class="gen">장년부</div><div class="ask">지금까지 나를 붙드신 주님을, 무엇이라 부르시겠습니까?</div><div class="why">호칭을 묻는다 — 관계의 밀도가 드러난다. 1~4교구 공통.</div></div>
+  </div>
+
+  <h3>사전 영상 「그 날, 바닷가에서」 · 4분 30초</h3>
+  <p>초안의 인터뷰 영상을 유지하되 <strong>질문을 바꾸고 구조를 서사로</strong> 세운다. 예배 선포 순서에 그대로 상영된다.</p>
+  <div class="board">
+    <div class="shot"><div class="tc">0:00–0:35</div><div class="sc"><span class="cap">새벽 물가, 빈 그물 클로즈업. 자막: “그들이 모든 것을 버려 두고 예수를 따르니라 — 눅 5:11”</span><div class="au">파도 소리 → CCM 인트로</div></div></div>
+    <div class="shot"><div class="tc">0:35–1:50</div><div class="sc">8부서 인터뷰 A — <strong>“제가 내려놓은 그물은…”</strong><div class="au">CCM 1절 아래로 깔림</div></div></div>
+    <div class="shot"><div class="tc">1:50–2:40</div><div class="sc">톤 다운, 조도 낮은 화면. 인터뷰 B — <strong>“그런데 저는 주님을 모른다고 한 적이 있습니다”</strong><div class="au">음악 빠짐 · 숨소리만</div></div></div>
+    <div class="shot"><div class="tc">2:40–3:20</div><div class="sc">숯불 클로즈업. 자막 3회 반복 — <span class="cap">“네가 나를 사랑하느냐”</span><div class="au">정적 → 후렴 진입</div></div></div>
+    <div class="shot"><div class="tc">3:20–4:10</div><div class="sc">8부서 대표가 한 명씩 카메라를 보며 — <span class="cap">“내가 주를 사랑합니다”</span><div class="au">CCM 후렴 풀 볼륨</div></div></div>
+    <div class="shot"><div class="tc">4:10–4:30</div><div class="sc">실사 — 그물이 십자가에 걸리는 장면 → 예배 타이틀<div class="au">아웃트로</div></div></div>
+  </div>
+  <h4>제작 실무</h4>
+  <p>인터뷰 대상 부서당 2명, 총 <span class="mono">16명</span>. 1인당 촬영 5분. 장비는 스마트폰 + 삼각대로 충분하되 <strong>외장 마이크는 필수</strong> — 화질보다 음질이 무너지면 고백이 전달되지 않는다. 조명은 창가 자연광, 오후 3시 이전.</p>
+
+  <h3>주제곡 운용</h3>
+  <p>아가파오 워십 「베드로의 고백 (Peter’s Confession)」을 <strong>찬양팀 특송 + 영상 BGM</strong> 두 곳에 쓴다. 회중 제창은 하지 않으므로 악보 배부는 불필요하나, 가사 PPT는 준비한다 — 특송 중 회중이 가사를 눈으로 따라가야 릴레이 고백으로 연결된다.</p>
+  <p class="note"><strong>저작권 확인 필요.</strong> 예배 내 연주(CCLI Copyright License)와 영상 삽입·온라인 송출(CCLI Streaming License)은 <strong>별개 라이선스</strong>다. 예배 실황이나 사전 영상을 유튜브에 올릴 계획이 있다면 D-6주까지 교회 라이선스 보유 범위를 확인할 것. 작사·작곡자 표기는 정식 악보 구매처에서 확인해 자막에 넣는다 — 이 기획서는 해당 정보를 확인하지 못했다.</p>
+</section>
+
+<!-- ══ 05 전후 행사 ═════════════════════ -->
+<section id="around">
+  <div class="sec-head"><span class="sec-num">06</span><h2>예배 전후 행사</h2></div>
+  <p class="lede">초안 5종을 모두 살리되, <strong>컨셉과 어긋나는 3종은 소재를 갈아끼운다</strong>. 예산은 늘지 않는다 — 오히려 예배 오브제를 재활용해 줄어든다.</p>
+
+  <div class="tbl-wrap"><table>
+    <tbody><tr><th>초안</th><th>개정</th><th>바꾸는 이유</th><th>변경 강도</th></tr>
+    <tr>
+      <td class="was">은혜의 프레임</td>
+      <td class="now">「그물 앞에서」 포토존</td>
+      <td>결실 배경 대신 <strong>예배에서 쓴 그물 십자가를 프레임째 로비로</strong>. 회중이 방금 자기 고백을 건 그물 앞에서 사진을 찍는다. 1주간 전시.</td>
+      <td>소재 교체<br><span style="color:var(--ok);font-size:12px">제작비 절감</span></td>
+    </tr>
+    <tr>
+      <td>동행네컷</td>
+      <td class="now">유지 · 프레임 문구만 교체</td>
+      <td>“예수님과 함께 걷겠습니다”. 4컷 중 1컷은 <strong>다른 세대와 함께</strong> 찍는 미션.</td>
+      <td>문구만</td>
+    </tr>
+    <tr>
+      <td class="was">감사 테이스팅</td>
+      <td class="now">「디베랴의 조찬」</td>
+      <td>요 21:9 — 주님이 숯불에 생선과 떡을 구워두고 기다리셨다. 구운 빵 + 따뜻한 국물 + 차로 구성하면 <strong>메뉴 자체가 본문</strong>이 된다.</td>
+      <td>메뉴 재구성</td>
+    </tr>
+    <tr>
+      <td>감사 나눔 스토어</td>
+      <td class="now">유지</td>
+      <td>수익금 사용처 명시 원칙 그대로. 컨셉과 충돌 없음.</td>
+      <td>없음</td>
+    </tr>
+    <tr>
+      <td class="was">은혜의 고리 만들기</td>
+      <td class="now">「매듭 팔찌」</td>
+      <td>슈링크아트 → <strong>그물 매듭</strong>(옭매듭·8자매듭) 팔찌. 모티브가 일치하고 재료비가 더 싸며 오븐이 필요 없다.</td>
+      <td>체험 교체<br><span style="color:var(--ok);font-size:12px">장비 불필요</span></td>
+    </tr>
+  </tbody></table></div>
+
+  <p class="note"><strong>인력이 부족하면 5종을 다 하지 마라.</strong> 우선순위는 ① 그물 포토존 ② 디베랴의 조찬 ③ 감사 나눔 스토어. 네컷과 매듭 팔찌는 봉사자 확보 상황을 D-2주에 보고 결정한다.</p>
+</section>
+
+<!-- ══ 06 일정 ══════════════════════════ -->
+<section id="sched">
+  <div class="sec-head"><span class="sec-num">07</span><h2>일정 · 체크리스트</h2></div>
+  <p class="lede">오늘부터 예배일까지 <strong class="mono" id="remain">64일</strong>. 초안의 D-4주 시작은 그물 제작과 카드 인쇄를 감당하지 못한다 — <strong>D-9주로 앞당겼다.</strong></p>
+
+  <div class="tl" id="tl"><div class="tl-row"><div class="when">D-9주<small>9/13</small></div><div class="what"><b>기획안 확정 · 예산 승인</b><span>1안 확정 보고. 예산 항목: 카드 인쇄 · 어망 · 집게 · 조명.</span></div></div><div class="tl-row"><div class="when">D-8주<small>9/20</small></div><div class="what"><b>순서자 섭외 착수 · 그물 소싱</b><span>릴레이 고백 8명(부서당 1명), 대표기도 2명. 그물은 중고 어구상 또는 원예 네트.</span></div></div><div class="tl-row"><div class="when">D-7주<small>9/27</small></div><div class="what"><b>인터뷰 대상 확정 · 질문지 배포</b><span>8부서 × 2명, 총 16명. 사전 질문지를 미리 줘야 답이 나온다.</span></div></div><div class="tl-row"><div class="when">D-6주<small>10/4</small></div><div class="what"><b>카드 디자인 확정 · 인쇄 발주</b><span>500장, 부서별 8색 + 장년부 교구번호란. CCLI 확인 완료 시점.</span></div></div><div class="tl-row"><div class="when">D-5주<small>10/11</small></div><div class="what"><b>사전 캠페인 시작 · 프레임 자재 발주</b><span>부서별 질문 카드 8종 배포. 그물 프레임 각재와 베이스 웨이트 확보.</span></div></div><div class="tl-row"><div class="when">D-4주<small>10/18</small></div><div class="what"><b>프레임 시제작</b><span>1안 확정済. 프레임을 세워 자립 안정성을 먼저 본다.</span></div></div><div class="tl-row"><div class="when">D-3주<small>10/25</small></div><div class="what"><b>영상 촬영 · 특송 연습 시작</b><span>인터뷰 12~18명 촬영. 외장 마이크 필수.</span></div></div><div class="tl-row hot"><div class="when">D-2주<small>11/1</small></div><div class="what"><b>영상 편집 · 릴레이 대본 확정</b><span>설교자와 ‘방점 문장’ 합의. 봉사자 실인원 확인 후 전후 행사 3종/5종 결정.</span></div></div><div class="tl-row hot"><div class="when">D-1주<small>11/8</small></div><div class="what"><b>집게 테스트 · 전체 리허설 · 백업 녹음</b><span>집게 낙하율 실측이 최우선. 2시간 전체 러닝, 백업 음성 8명 확보.</span></div></div><div class="tl-row hot"><div class="when">D-Day<small>11/15</small></div><div class="what"><b>온세대 추수감사예배</b><span>10:30 프레임 조립 → 13:05 배치 완료 → 입장 시 카드 배부 → 예배 후 로비 이관.</span></div></div></div>
+
+  <h3>준비 체크리스트</h3>
+  <div class="ck-head">
+    <div class="ck-prog">
+      <div class="ck-bar"><i id="ckbar" style="width: 0%;"></i></div>
+      <span class="mono" id="ckcount">0 / 26</span>
+    </div>
+    <div class="ck-sync" id="cksync">이 브라우저에 저장됨</div>
+  </div>
+  <div class="ck-list" id="cklist"><div class="ck"><input type="checkbox" id="c01" data-id="c01"><label for="c01">1안 확정 당회 보고<small>D-9주 · 순서 구조 변경 승인 완료</small></label><span class="owner">기획</span></div><div class="ck"><input type="checkbox" id="c02" data-id="c02"><label for="c02">예산 승인 (카드·그물·프레임·집게·조명)<small>D-9주</small></label><span class="owner">기획</span></div><div class="ck"><input type="checkbox" id="c03" data-id="c03"><label for="c03">릴레이 고백 8명 섭외 (부서당 1명)<small>D-8주 · 영아부 부모 + 장년부 교구 순번 확정</small></label><span class="owner">교육</span></div><div class="ck"><input type="checkbox" id="c04" data-id="c04"><label for="c04">그물 3.5×2.4m 확보<small>D-8주 · 망목 30~50mm, 원예 네트 또는 중고 어망</small></label><span class="owner">시설</span></div><div class="ck"><input type="checkbox" id="c05" data-id="c05"><label for="c05">인터뷰 대상 16명 확정 · 질문지 배포<small>D-7주 · 8부서 × 2명</small></label><span class="owner">영상</span></div><div class="ck"><input type="checkbox" id="c06" data-id="c06"><label for="c06">고백 카드 디자인 확정<small>D-6주 · 앞뒤 문구, 부서별 8색, 장년부 교구번호란</small></label><span class="owner">디자인</span></div><div class="ck"><input type="checkbox" id="c07" data-id="c07"><label for="c07">카드 500장 인쇄 발주<small>D-6주 · 엽서지 200g 이상</small></label><span class="owner">기획</span></div><div class="ck"><input type="checkbox" id="c08" data-id="c08"><label for="c08">CCLI 라이선스 범위 확인<small>D-6주 · 예배 연주 / 온라인 송출 각각</small></label><span class="owner">찬양</span></div><div class="ck"><input type="checkbox" id="c09" data-id="c09"><label for="c09">부서별 질문 카드 8종 배포 (사전 캠페인 개시)<small>D-5주</small></label><span class="owner">교육</span></div><div class="ck"><input type="checkbox" id="c10" data-id="c10"><label for="c10">그물 프레임 자재 발주 (2×4 각재 15m)<small>D-5주 · 후방 지지대 포함</small></label><span class="owner">시설</span></div><div class="ck"><input type="checkbox" id="c11" data-id="c11"><label for="c11">프레임 시제작 착수 확인<small>D-4주 · 1안 확정済</small></label><span class="owner">기획</span></div><div class="ck"><input type="checkbox" id="c12" data-id="c12"><label for="c12">프레임 시제작 · 자립 안정성 확인<small>D-4주 · 베이스 웨이트 60kg 확보</small></label><span class="owner">시설</span></div><div class="ck"><input type="checkbox" id="c13" data-id="c13"><label for="c13">찬양팀 콘티 1차 (3단 배열 + 특송)<small>D-4주</small></label><span class="owner">찬양</span></div><div class="ck"><input type="checkbox" id="c14" data-id="c14"><label for="c14">인터뷰 영상 촬영<small>D-3주 · 외장 마이크 필수</small></label><span class="owner">영상</span></div><div class="ck"><input type="checkbox" id="c15" data-id="c15"><label for="c15">특송 「베드로의 고백」 연습 시작<small>D-3주 · 가사 PPT 제작 포함</small></label><span class="owner">찬양</span></div><div class="ck"><input type="checkbox" id="c16" data-id="c16"><label for="c16">영상 편집 · 시사<small>D-2주 · 4분 30초</small></label><span class="owner">영상</span></div><div class="ck"><input type="checkbox" id="c17" data-id="c17"><label for="c17">설교자와 ‘방점 문장’ 합의<small>D-2주 · 24분 하드컷 포함</small></label><span class="owner">기획</span></div><div class="ck"><input type="checkbox" id="c18" data-id="c18"><label for="c18">전후 행사 3종/5종 결정<small>D-2주 · 봉사자 실인원 기준</small></label><span class="owner">기획</span></div><div class="ck"><input type="checkbox" id="c19" data-id="c19"><label for="c19">나무 집게 500개 · 수거 바구니 11개 확보<small>D-2주</small></label><span class="owner">시설</span></div><div class="ck"><input type="checkbox" id="c20" data-id="c20"><label for="c20">집게 낙하 테스트 50장 / 30분 방치<small>D-1주 · 낙하율 5% 초과 시 엽서지 250g으로 상향</small></label><span class="owner">시설</span></div><div class="ck"><input type="checkbox" id="c21" data-id="c21"><label for="c21">백라이트 2대 조준 · 조명 큐 Q1~Q5 확인<small>D-1주 · 객석에서 십자가 실루엣 확인</small></label><span class="owner">음향</span></div><div class="ck"><input type="checkbox" id="c22" data-id="c22"><label for="c22">전체 리허설<small>D-1주 · 2시간 전체</small></label><span class="owner">전체</span></div><div class="ck"><input type="checkbox" id="c23" data-id="c23"><label for="c23">어린이 포함 8명 백업 음성 녹음<small>D-1주 · 3초 침묵 시 재생 신호 약속</small></label><span class="owner">음향</span></div><div class="ck"><input type="checkbox" id="c24" data-id="c24"><label for="c24">안내위원 12명 동선 교육<small>D-1주 · 11개 부서/교구 단위 수거 → 고정 위치 배정</small></label><span class="owner">안내</span></div><div class="ck"><input type="checkbox" id="c25" data-id="c25"><label for="c25">당일 10:30 프레임 조립 착수<small>D-Day · 13:05 배치 완료까지</small></label><span class="owner">시설</span></div><div class="ck"><input type="checkbox" id="c26" data-id="c26"><label for="c26">예배 후 그물 로비 이관 · 포토존 전환<small>D-Day · 프레임 분해 없이 대차 이동</small></label><span class="owner">시설</span></div></div>
+</section>
+
+<!-- ══ 07 리스크 ════════════════════════ -->
+<section id="risk">
+  <div class="sec-head"><span class="sec-num">08</span><h2>리스크 — 요약</h2></div>
+  <p class="lede">원칙 하나 — <strong>감사예배를 자책예배로 만들지 않는다.</strong> 나머지는 시간·안전·사람 문제다.</p>
+  <div class="risks">
+    <div class="risk"><span class="sev hi">치명</span><div class="rb"><b>방향 이탈 — 회개예배로 변질</b><div class="fix">3막 9분 엄수 · 방점 <strong>“실패한 나를 놓지 않으셨다”</strong> · D-2주 설교자와 문장 합의.</div></div></div>
+    <div class="risk"><span class="sev hi">치명</span><div class="rb"><b>전도 — 그물이 넘어짐</b><div class="fix">베이스 <strong>60kg 이상</strong> + 전면 1m 차단라인 · 아이 접근 금지.</div></div></div>
+    <div class="risk"><span class="sev mid">주의</span><div class="rb"><b>시간 초과 — 80분 붕괴</b><div class="fix">수거는 특송 중 완료, 봉헌은 안내위원 11명 3분만 · 설교 <strong>24분 하드컷</strong> · 광고는 주보로.</div></div></div>
+    <div class="risk"><span class="sev mid">주의</span><div class="rb"><b>사람 — 멈춤 · 형식화</b><div class="fix">8명 백업 음성 녹음(3초 침묵 시 재생) · 영아부는 부모 대필+맨 앞 순서로 공식화.</div></div></div>
+    <div class="risk"><span class="sev lo">관리</span><div class="rb"><b>저작권 · 인력</b><div class="fix">CCLI D-6주 확인(미보유 시 송출본 음원 대체) · 전후 행사는 3종 우선(포토존·조찬·스토어).</div></div></div>
+  </div>
+  <p class="note">상세 대응(조명 큐·낙하 테스트·동선)은 04 그물 십자가의 실무 스펙을 따른다.</p>
+</section>
+
+<footer>
+  <p>2026 온세대 추수감사예배 기획 개정안 · 컨셉「베드로의 고백」 — 초안(12p) 기반 재구성. 예배일 2026. 11. 15. (주일) 오후 2시 (14:00–15:20).</p>
+  <p style="margin-top:8px">주제곡 「베드로의 고백 (Peter’s Confession)」 아가파오 워십. 저작권자 표기 및 라이선스 범위는 정식 악보 구매처에서 확인 후 반영할 것.</p>
+</footer>
+
+    </main>
+  </div>
+</div>
+
+<script>
+/* ── 데이터 ─────────────────────────────── */
+var PLAN_A = [
+  {m:1,name:"예배 선포 영상 「그 날, 바닷가에서」",min:5,tag:"교체",desc:"빈 그물에서 시작해 <mark>“네가 나를 사랑하느냐”</mark>로 닫는 4분 30초. 초안의 카운트다운을 대체한다."},
+  {m:1,name:"부르심 선포 · 기원",min:3,tag:"신설",desc:"눅 5:11 봉독과 함께 예배 선포. “오늘 우리는 받은 것을 세러 온 것이 아니라, 부르신 분께 답하러 왔습니다.”"},
+  {m:2,name:"찬양 1부 — 부르심과 동행",min:13,tag:"",desc:"3곡. 밝은 톤, 온세대 공통 찬양. 조명 풀."},
+  {m:2,name:"세대통합 대표기도",min:5,tag:"",desc:"영아부(부모 대독) + 장년부 대표가 함께 제단에 올라 교차 기도. 초안 연출 유지."},
+  {m:3,name:"찬양 2부 — 실패와 붙드심",min:9,tag:"신설",desc:"2곡. 조명 단계적 다운. <mark>9분 초과 금지</mark> — 넘어가면 회개예배가 된다."},
+  {m:3,name:"8부서 릴레이 성경봉독 (요 21:1–19)",min:4,tag:"신설",desc:"부서별로 한 단락씩 30초. 마지막 “내 양을 먹이라”는 장년부 대표."},
+  {m:4,name:"설교 「네가 나를 사랑하느냐」",min:24,tag:"교체",desc:"본문 요 21:15–17. 방점은 <mark>“실패한 나를 놓지 않으셨다”</mark>. 24분 하드컷."},
+  {m:5,name:"찬양팀 특송 「베드로의 고백」",min:5,tag:"신설",desc:"이 동안 회중이 고백 카드를 통로로 전달, 안내위원 12명 수거 완료."},
+  {m:5,name:"세대별 릴레이 고백",min:4,tag:"신설",desc:"8명 × 25초. 마지막에 <mark>전 회중 제창</mark> — “내가 주를 사랑합니다.”"},
+  {m:5,name:"그물 내려놓기 · 고백 카드 봉헌",min:5,tag:"교체",desc:"안내위원 11명 동시 고정(3분) → 조명 전환, 백라이트로 십자가 발광(2분). 물질 헌금은 별도 봉헌함."},
+  {m:6,name:"파송 「내 양을 먹이라」 · 축도",min:3,tag:"신설",desc:"요 21:19로 파송. 광고는 주보로 이관."}
+];
+var PLAN_B = null;
+var MC = ["","var(--m1)","var(--m2)","var(--m3)","var(--m4)","var(--m5)","var(--m6)"];
+var MN = ["","1막 부르심","2막 동행","3막 붙드심","4막 질문","5막 고백","6막 파송"];
+
+var SCHED = [
+  {w:"D-9주",d:"9/13",t:"기획안 확정 · 예산 승인",s:"1안 확정 보고. 예산 항목: 카드 인쇄 · 어망 · 집게 · 조명."},
+  {w:"D-8주",d:"9/20",t:"순서자 섭외 착수 · 그물 소싱",s:"릴레이 고백 8명(부서당 1명), 대표기도 2명. 그물은 중고 어구상 또는 원예 네트."},
+  {w:"D-7주",d:"9/27",t:"인터뷰 대상 확정 · 질문지 배포",s:"8부서 × 2명, 총 16명. 사전 질문지를 미리 줘야 답이 나온다."},
+  {w:"D-6주",d:"10/4",t:"카드 디자인 확정 · 인쇄 발주",s:"500장, 부서별 8색 + 장년부 교구번호란. CCLI 확인 완료 시점."},
+  {w:"D-5주",d:"10/11",t:"사전 캠페인 시작 · 프레임 자재 발주",s:"부서별 질문 카드 8종 배포. 그물 프레임 각재와 베이스 웨이트 확보."},
+  {w:"D-4주",d:"10/18",t:"프레임 시제작",s:"1안 확정済. 프레임을 세워 자립 안정성을 먼저 본다."},
+  {w:"D-3주",d:"10/25",t:"영상 촬영 · 특송 연습 시작",s:"인터뷰 12~18명 촬영. 외장 마이크 필수."},
+  {w:"D-2주",d:"11/1",t:"영상 편집 · 릴레이 대본 확정",s:"설교자와 ‘방점 문장’ 합의. 봉사자 실인원 확인 후 전후 행사 3종/5종 결정."},
+  {w:"D-1주",d:"11/8",t:"집게 테스트 · 전체 리허설 · 백업 녹음",s:"집게 낙하율 실측이 최우선. 2시간 전체 러닝, 백업 음성 8명 확보."},
+  {w:"D-Day",d:"11/15",t:"온세대 추수감사예배",s:"10:30 프레임 조립 → 13:05 배치 완료 → 입장 시 카드 배부 → 예배 후 로비 이관."}
+];
+
+var CHECKS = [
+  {id:"c01",t:"1안 확정 당회 보고",s:"D-9주 · 순서 구조 변경 승인 완료",o:"기획"},
+  {id:"c02",t:"예산 승인 (카드·그물·프레임·집게·조명)",s:"D-9주",o:"기획"},
+  {id:"c03",t:"릴레이 고백 8명 섭외 (부서당 1명)",s:"D-8주 · 영아부 부모 + 장년부 교구 순번 확정",o:"교육"},
+  {id:"c04",t:"그물 3.5×2.4m 확보",s:"D-8주 · 망목 30~50mm, 원예 네트 또는 중고 어망",o:"시설"},
+  {id:"c05",t:"인터뷰 대상 16명 확정 · 질문지 배포",s:"D-7주 · 8부서 × 2명",o:"영상"},
+  {id:"c06",t:"고백 카드 디자인 확정",s:"D-6주 · 앞뒤 문구, 부서별 8색, 장년부 교구번호란",o:"디자인"},
+  {id:"c07",t:"카드 500장 인쇄 발주",s:"D-6주 · 엽서지 200g 이상",o:"기획"},
+  {id:"c08",t:"CCLI 라이선스 범위 확인",s:"D-6주 · 예배 연주 / 온라인 송출 각각",o:"찬양"},
+  {id:"c09",t:"부서별 질문 카드 8종 배포 (사전 캠페인 개시)",s:"D-5주",o:"교육"},
+  {id:"c10",t:"그물 프레임 자재 발주 (2×4 각재 15m)",s:"D-5주 · 후방 지지대 포함",o:"시설"},
+  {id:"c11",t:"프레임 시제작 착수 확인",s:"D-4주 · 1안 확정済",o:"기획"},
+  {id:"c12",t:"프레임 시제작 · 자립 안정성 확인",s:"D-4주 · 베이스 웨이트 60kg 확보",o:"시설"},
+  {id:"c13",t:"찬양팀 콘티 1차 (3단 배열 + 특송)",s:"D-4주",o:"찬양"},
+  {id:"c14",t:"인터뷰 영상 촬영",s:"D-3주 · 외장 마이크 필수",o:"영상"},
+  {id:"c15",t:"특송 「베드로의 고백」 연습 시작",s:"D-3주 · 가사 PPT 제작 포함",o:"찬양"},
+  {id:"c16",t:"영상 편집 · 시사",s:"D-2주 · 4분 30초",o:"영상"},
+  {id:"c17",t:"설교자와 ‘방점 문장’ 합의",s:"D-2주 · 24분 하드컷 포함",o:"기획"},
+  {id:"c18",t:"전후 행사 3종/5종 결정",s:"D-2주 · 봉사자 실인원 기준",o:"기획"},
+  {id:"c19",t:"나무 집게 500개 · 수거 바구니 11개 확보",s:"D-2주",o:"시설"},
+  {id:"c20",t:"집게 낙하 테스트 50장 / 30분 방치",s:"D-1주 · 낙하율 5% 초과 시 엽서지 250g으로 상향",o:"시설"},
+  {id:"c21",t:"백라이트 2대 조준 · 조명 큐 Q1~Q5 확인",s:"D-1주 · 객석에서 십자가 실루엣 확인",o:"음향"},
+  {id:"c22",t:"전체 리허설",s:"D-1주 · 2시간 전체",o:"전체"},
+  {id:"c23",t:"어린이 포함 8명 백업 음성 녹음",s:"D-1주 · 3초 침묵 시 재생 신호 약속",o:"음향"},
+  {id:"c24",t:"안내위원 12명 동선 교육",s:"D-1주 · 11개 부서/교구 단위 수거 → 고정 위치 배정",o:"안내"},
+  {id:"c25",t:"당일 10:30 프레임 조립 착수",s:"D-Day · 13:05 배치 완료까지",o:"시설"},
+  {id:"c26",t:"예배 후 그물 로비 이관 · 포토존 전환",s:"D-Day · 프레임 분해 없이 대차 이동",o:"시설"}
+];
+
+/* ── 렌더 ───────────────────────────────── */
+function esc(s){return s;}
+function renderRail(el,rows){
+  var acc=0,h="";
+  for(var i=0;i<rows.length;i++){
+    var r=rows[i];
+    var hh=Math.floor(acc/60), mm=acc%60;
+    var stamp=(hh>0?hh+":":"")+(hh>0?String(mm).padStart(2,"0"):mm+"′");
+    h+='<div class="cue'+(r.tag?" new":"")+'" style="--mc:'+MC[r.m]+'">'
+      +'<div class="t mono">'+stamp+'</div>'
+      +'<div class="bar"></div>'
+      +'<div class="body"><div class="name">'+r.name
+      +(r.tag?'<span class="tag">'+r.tag+'</span>':'')+'</div>'
+      +'<div class="desc"><span style="color:'+MC[r.m]+';font-weight:600">'+MN[r.m]+'</span> · '+r.desc+'</div></div>'
+      +'<div class="min mono">'+r.min+'분</div></div>';
+    acc+=r.min;
+  }
+  el.innerHTML=h;
+}
+renderRail(document.getElementById("rail-a"),PLAN_A);
+if(document.getElementById("rail-b")&&PLAN_B){renderRail(document.getElementById("rail-b"),PLAN_B);}
+
+var tl=document.getElementById("tl"),th="";
+for(var i=0;i<SCHED.length;i++){var s=SCHED[i];
+  th+='<div class="tl-row'+(i>=SCHED.length-3?" hot":"")+'"><div class="when">'+s.w+'<small>'+s.d+'</small></div>'
+    +'<div class="what"><b>'+s.t+'</b><span>'+s.s+'</span></div></div>';}
+tl.innerHTML=th;
+
+/* ── D-day ──────────────────────────────── */
+(function(){
+  var target=new Date(2026,10,15);
+  var now=new Date(); now.setHours(0,0,0,0);
+  var d=Math.round((target-now)/86400000);
+  document.getElementById("dday").textContent = d>0?("D-"+d):(d===0?"D-DAY":"종료");
+  var r=document.getElementById("remain"); if(r) r.textContent = d>0?(d+"일"):"—";
+})();
+
+/* ── 안 전환 ────────────────────────────── */
+(function(){
+  var ba=document.getElementById("btn-a"),bb=document.getElementById("btn-b"),
+      pa=document.getElementById("pane-a"),pb=document.getElementById("pane-b");
+  if(pa) pa.hidden=false; if(pb) pb.hidden=true;
+  if(!ba||!bb||!pa||!pb) return;
+  function set(a){
+    ba.setAttribute("aria-pressed",a?"true":"false");
+    bb.setAttribute("aria-pressed",a?"false":"true");
+    pa.hidden=!a; pb.hidden=a;
+  }
+  ba.addEventListener("click",function(){set(true)});
+  bb.addEventListener("click",function(){set(false)});
+})();
+
+/* ── 목차 스크롤스파이 ──────────────────── */
+(function(){
+  var links=[].slice.call(document.querySelectorAll("nav.side a"));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute("href"))});
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var i=secs.indexOf(e.target); if(i<0) return;
+      links.forEach(function(l,j){l.classList.toggle("on",j===i)});
+    });
+  },{rootMargin:"-15% 0px -70% 0px"});
+  secs.forEach(function(s){if(s)io.observe(s)});
+})();
+
+/* ── 체크리스트 ─────────────────────────── */
+(function(){
+  var list=document.getElementById("cklist"),
+      bar=document.getElementById("ckbar"),
+      cnt=document.getElementById("ckcount"),
+      sync=document.getElementById("cksync");
+  var state={}, LS="ows2026.checks";
+
+  try{ var raw=localStorage.getItem(LS); if(raw) state=JSON.parse(raw)||{}; }catch(e){}
+
+  var h="";
+  for(var i=0;i<CHECKS.length;i++){var c=CHECKS[i];
+    h+='<div class="ck"><input type="checkbox" id="'+c.id+'" data-id="'+c.id+'">'
+      +'<label for="'+c.id+'">'+c.t+'<small>'+c.s+'</small></label>'
+      +'<span class="owner">'+c.o+'</span></div>';}
+  list.innerHTML=h;
+
+  function paint(){
+    var done=0;
+    CHECKS.forEach(function(c){
+      var el=document.getElementById(c.id);
+      if(!el) return;
+      el.checked=!!state[c.id];
+      if(state[c.id]) done++;
+    });
+    bar.style.width=(done/CHECKS.length*100)+"%";
+    cnt.textContent=done+" / "+CHECKS.length;
+  }
+  paint();
+
+  list.addEventListener("change",function(e){
+    var t=e.target; if(!t.dataset||!t.dataset.id) return;
+    var id=t.dataset.id;
+    state[id]=t.checked;
+    paint();
+    try{ localStorage.setItem(LS,JSON.stringify(state)); }catch(err){}
+  });
+})();
+</script>
+
+</body></html>

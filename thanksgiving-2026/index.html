@@ -271,6 +271,19 @@ details.spec{margin-top:14px;border:1px solid var(--line);border-radius:10px;bac
 details.spec summary{cursor:pointer;font-weight:600;font-size:14px}
 details.spec .tbl-wrap{margin-top:10px}
 
+
+/* ── 입력칸(준비물·담당자) ───────────────── */
+.po{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;margin-top:6px;font-size:12px}
+.po .pl{color:var(--faint);font-size:11px;white-space:nowrap}
+.ed{display:inline-block;min-width:44px;max-width:100%;padding:1px 8px;border:1px dashed var(--line2);border-radius:6px;background:var(--surface2);font-size:12.5px;color:var(--text);cursor:text}
+.ed:focus{outline:2px solid var(--ember);background:var(--surface)}
+.ed:empty:before{content:attr(data-ph);color:var(--faint)}
+.edbox{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:13px;border-top:1px dashed var(--line);padding-top:8px}
+.edbox b{font-size:12px;color:var(--dim);margin-right:4px}
+.ck .owner.ed{cursor:text;white-space:normal}
+.own-ed{margin-top:6px;font-size:12px;color:var(--dim)}
+.edit-hint{font-size:12px;color:var(--faint)}
+
 /* ── risk ──────────────────────────────── */
 .risks{display:flex; flex-direction:column; gap:0; border-top:1px solid var(--line); margin-top:10px}
 .risk{display:grid; grid-template-columns:auto 1fr; gap:0 15px; padding:16px 0; border-bottom:1px solid var(--line)}
@@ -338,7 +351,7 @@ a{color:var(--ember)}
   </blockquote>
 
   <h3>감사의 네 층위</h3>
-  <p>초안이 이미 1층에서 3층으로 올라섰다. 이번 개정은 <em>4층</em>까지 올린다. 아래 계단이 예배 전체의 설계도다.</p>
+  <p>초안은 3층까지 도달. 이번 개정은 <em>4층</em>까지 — 아래 계단이 설계도다.</p>
 
   <svg class="ladder" viewBox="0 0 600 250" role="img" aria-label="감사의 네 층위 계단 다이어그램: 결실 감사, 보호 감사, 존재 감사, 사랑 감사 순으로 상승">
     <g font-size="13" font-weight="600">
@@ -401,9 +414,9 @@ a{color:var(--ember)}
   </div>
 
   <div id="pane-a">
-    <div class="plan-note"><b>1안 확정 — 순서 자체를 6막으로 재설계한다.</b> 예배 전체가 하나의 이야기로 흐른다. 순서 이름·개수가 바뀌므로 당회·부서 설득과 순서자 재섭외(릴레이 성경봉독 6명 추가)가 필요하다.</div>
+    <div class="plan-note"><b>1안 확정 — 6막 재설계.</b> 순서명·개수 변경으로 당회 설득 + 봉독자 6명 재섭외 필요.</div>
     <div class="rail" id="rail-a"><div class="cue new" style="--mc:var(--m1)"><div class="t mono">0′</div><div class="bar"></div><div class="body"><div class="name">예배 선포 영상 「그 날, 바닷가에서」<span class="tag">교체</span></div><div class="desc"><span style="color:var(--m1);font-weight:600">1막 부르심</span> · 빈 그물에서 시작해 <mark>“네가 나를 사랑하느냐”</mark>로 닫는 4분 30초. 초안의 카운트다운을 대체한다.</div></div><div class="min mono">5분</div></div><div class="cue new" style="--mc:var(--m1)"><div class="t mono">5′</div><div class="bar"></div><div class="body"><div class="name">부르심 선포 · 기원<span class="tag">신설</span></div><div class="desc"><span style="color:var(--m1);font-weight:600">1막 부르심</span> · 눅 5:11 봉독과 함께 예배 선포. “오늘 우리는 받은 것을 세러 온 것이 아니라, 부르신 분께 답하러 왔습니다.”</div></div><div class="min mono">3분</div></div><div class="cue" style="--mc:var(--m2)"><div class="t mono">8′</div><div class="bar"></div><div class="body"><div class="name">찬양 1부 — 부르심과 동행</div><div class="desc"><span style="color:var(--m2);font-weight:600">2막 동행</span> · 3곡. 밝은 톤, 온세대 공통 찬양. 조명 풀.</div></div><div class="min mono">13분</div></div><div class="cue" style="--mc:var(--m2)"><div class="t mono">21′</div><div class="bar"></div><div class="body"><div class="name">세대통합 대표기도</div><div class="desc"><span style="color:var(--m2);font-weight:600">2막 동행</span> · 영아부(부모 대독) + 장년부 대표가 함께 제단에 올라 교차 기도. 초안 연출 유지.</div></div><div class="min mono">5분</div></div><div class="cue new" style="--mc:var(--m3)"><div class="t mono">26′</div><div class="bar"></div><div class="body"><div class="name">찬양 2부 — 실패와 붙드심<span class="tag">신설</span></div><div class="desc"><span style="color:var(--m3);font-weight:600">3막 붙드심</span> · 2곡. 조명 단계적 다운. <mark>9분 초과 금지</mark> — 넘어가면 회개예배가 된다.</div></div><div class="min mono">9분</div></div><div class="cue new" style="--mc:var(--m3)"><div class="t mono">35′</div><div class="bar"></div><div class="body"><div class="name">8부서 릴레이 성경봉독 (요 21:1–19)<span class="tag">신설</span></div><div class="desc"><span style="color:var(--m3);font-weight:600">3막 붙드심</span> · 부서별로 한 단락씩 30초. 마지막 “내 양을 먹이라”는 장년부 대표.</div></div><div class="min mono">4분</div></div><div class="cue new" style="--mc:var(--m4)"><div class="t mono">39′</div><div class="bar"></div><div class="body"><div class="name">설교 「네가 나를 사랑하느냐」<span class="tag">교체</span></div><div class="desc"><span style="color:var(--m4);font-weight:600">4막 질문</span> · 본문 요 21:15–17. 방점은 <mark>“실패한 나를 놓지 않으셨다”</mark>. 24분 하드컷.</div></div><div class="min mono">24분</div></div><div class="cue new" style="--mc:var(--m5)"><div class="t mono">1:03</div><div class="bar"></div><div class="body"><div class="name">찬양팀 특송 「베드로의 고백」<span class="tag">신설</span></div><div class="desc"><span style="color:var(--m5);font-weight:600">5막 고백</span> · 이 동안 회중이 고백 카드를 통로로 전달, 안내위원 12명 수거 완료.</div></div><div class="min mono">5분</div></div><div class="cue new" style="--mc:var(--m5)"><div class="t mono">1:08</div><div class="bar"></div><div class="body"><div class="name">세대별 릴레이 고백<span class="tag">신설</span></div><div class="desc"><span style="color:var(--m5);font-weight:600">5막 고백</span> · 8명 × 25초. 마지막에 <mark>전 회중 제창</mark> — “내가 주를 사랑합니다.”</div></div><div class="min mono">4분</div></div><div class="cue new" style="--mc:var(--m5)"><div class="t mono">1:12</div><div class="bar"></div><div class="body"><div class="name">그물 내려놓기 · 고백 카드 봉헌<span class="tag">교체</span></div><div class="desc"><span style="color:var(--m5);font-weight:600">5막 고백</span> · 안내위원 11명 동시 고정(3분) → 조명 전환, 백라이트로 십자가 발광(2분). 물질 헌금은 별도 봉헌함.</div></div><div class="min mono">5분</div></div><div class="cue new" style="--mc:var(--m6)"><div class="t mono">1:17</div><div class="bar"></div><div class="body"><div class="name">파송 「내 양을 먹이라」 · 축도<span class="tag">신설</span></div><div class="desc"><span style="color:var(--m6);font-weight:600">6막 파송</span> · 요 21:19로 파송. 광고는 주보로 이관.</div></div><div class="min mono">3분</div></div></div>
-    <div class="cue-total"><span>합계</span><b>80분 (14:00–15:20)</b></div><p class="note">※ 14:00 시작 기준 — 0′=14:00, 설교 14:39–15:03, 그물 봉헌 15:12–15:17, 파송 15:17–15:20.</p>
+    <div class="cue-total"><span>합계</span><b>80분 (14:00–15:20)</b></div><p class="note">※ 14:00 시작 기준 — 0′=14:00, 설교 14:39–15:03, 그물 봉헌 15:12–15:17, 파송 15:17–15:20. <span class="edit-hint">점선 칸은 클릭 입력 · 이 브라우저에 자동 저장.</span></p>
   </div>
 
   <div id="pane-b" hidden></div>
@@ -414,7 +427,7 @@ a{color:var(--ember)}
 <!-- ══ 03 클라이맥스 ════════════════════ -->
 <section id="climax">
   <div class="sec-head"><span class="sec-num">03</span><h2>클라이맥스 연출</h2></div>
-  <p class="lede">세 장치가 하나의 동선으로 이어진다. <strong>주님이 묻고(영상) → 부서가 답하고(릴레이) → 회중이 답을 걸어둔다(카드 · 그물)</strong>. 따로 놀면 셋 다 죽는다. 그물 자체의 설계는 <a href="#net">04 그물 십자가</a>에서 따로 다룬다.</p>
+  <p class="lede">동선은 하나: <strong>주님이 묻고(영상) → 부서가 답하고(릴레이) → 회중이 걸어둔다(카드·그물)</strong>. 설계 상세는 <a href="#net">04 그물 십자가</a>.</p>
 
   <div class="climax">
 
@@ -431,12 +444,12 @@ a{color:var(--ember)}
       </div>
       <h4>순서 · 8개 부서</h4>
       <p>영아부(부모가 품에 안고 대독) → 유치부 → 유년부 → 초등부 → 중등부 → 고등부 → 청년부 → 장년부. <strong>장년부 대표가 마지막 문장을 말하면 전 회중이 함께 제창</strong>한다 — 이 한 번의 제창이 예배 전체의 정점이다.</p>
-      <p class="note">영아부를 <strong>맨 앞</strong>에 두는 이유: 말 못 하는 세대의 고백을 부모가 대신 드리는 장면으로 시작해야, 마지막 장년부의 평생 고백과 수미상관이 된다. 장년부 대표는 1~4교구 중 한 명이 맡되, <strong>교구 순번제</strong>로 정하면 형평성 시비가 없다.</p>
-      <p class="note">8명 × 25초 = 3분 20초. 무대 이동을 감안해 <span class="mono">4분</span>으로 잡는다. 4교구를 모두 세우면 11명 5분이 되어 봉헌 시간을 잠식하므로 권장하지 않는다.</p>
+      <p class="note">영아부(부모 대독)가 맨 앞, 장년부+전 회중 제창이 정점. 장년부 대표는 <strong>교구 순번제</strong>. 8명×25초=3분 20초, 이동 포함 <span class="mono">4분</span>.</p>
       <div class="kit">
         <span>스탠드 마이크 <b>1</b></span><span>예비 핀마이크 <b>1</b></span><span>어린이 발판 <b>1</b></span>
         <span>큰 글씨 대본 카드 <b>8</b></span><span>백업 녹음 <b>8</b></span>
       </div>
+      <div class="edbox"><span><b>준비물</b><span class="ed" contenteditable="true" data-ed="cxAp" data-ph="입력">스탠드마이크·핀마이크·발판·대본카드 8·백업녹음</span></span><span><b>담당</b><span class="ed" contenteditable="true" data-ed="cxAo" data-ph="입력">음향팀</span></span></div>
     </article>
 
     <article class="cx">
@@ -452,7 +465,8 @@ a{color:var(--ember)}
         <tr><td>영아부</td><td>부모 대필 전용 문구 별도 인쇄 — “우리 아이를 주신 주님께”</td></tr>
         <tr><td>수량</td><td><span class="mono">500</span>장 <span style="color:var(--faint)">(출석 250~400명 + 예비 25%)</span></td></tr>
       </tbody></table></div>
-      <p><strong>물질 헌금과 카드는 분리한다.</strong> 헌금은 기존 봉헌함, 카드는 그물. 사회자가 배부 시점과 봉헌 시점 두 번 안내하지 않으면 반드시 섞인다.</p>
+      <p><strong>물질 헌금과 카드 분리</strong> — 헌금은 봉헌함, 카드는 그물. 사회자가 배부·봉헌 두 시점에 안내.</p>
+      <div class="edbox"><span><b>준비물</b><span class="ed" contenteditable="true" data-ed="cxBp" data-ph="입력">카드 500장·필기구·수거 바구니 11·집게</span></span><span><b>담당</b><span class="ed" contenteditable="true" data-ed="cxBo" data-ph="입력">안내팀</span></span></div>
     </article>
 
   </div>
@@ -542,12 +556,12 @@ a{color:var(--ember)}
 
   <h3>당일 설치 타임라인 (14:00 예배 기준)</h3>
   <div class="tl">
-    <div class="tl-row"><div class="when">10:30<small>90분</small></div><div class="what"><b>프레임 반입 · 조립</b><span>봉사자 4명. 후방 지지대 각도 고정까지. 전동 드라이버 2대.</span></div></div>
-    <div class="tl-row"><div class="when">12:00<small>30분</small></div><div class="what"><b>그물 씌우기 · 십자가 경계 표시</b><span>2명. 그물은 팽팽하게 — 늘어지면 카드가 겹쳐 걸립니다.</span></div></div>
-    <div class="tl-row"><div class="when">12:30<small>20분</small></div><div class="what"><b>백라이트 설치 · 조명 큐 확인</b><span>객석에서 십자가 실루엣이 보이는지 실사로 1회 확인.</span></div></div>
-    <div class="tl-row hot"><div class="when">12:50<small>15분</small></div><div class="what"><b>안내위원 12명 최종 브리핑</b><span>수거 구역·고정 위치·신호 확인. <strong>이 브리핑을 건너뛰면 봉헌이 무너집니다.</strong></span></div></div>
-    <div class="tl-row hot"><div class="when">13:05<small>—</small></div><div class="what"><b>카드·집게 배치 완료</b><span>부서색 분류, 집게는 그물 앞 바구니 11개에 분산.</span></div></div>
-    <div class="tl-row hot"><div class="when">13:20<small>—</small></div><div class="what"><b>회중 입장 시작</b><span>입장과 동시에 카드 배부. 14:00 시작 전 대부분 작성 완료.</span></div></div>
+    <div class="tl-row"><div class="when">10:30<small>90분</small></div><div class="what"><b>프레임 반입 · 조립</b><span>봉사자 4명. 후방 지지대 각도 고정까지. 전동 드라이버 2대.</span><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="net0p" data-ph="입력">각재·모래주머니·전동드라이버 2</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="net0o" data-ph="입력">시설팀(4명)</span></div></div></div>
+    <div class="tl-row"><div class="when">12:00<small>30분</small></div><div class="what"><b>그물 씌우기 · 십자가 경계 표시</b><span>2명. 그물은 팽팽하게 — 늘어지면 카드가 겹쳐 걸립니다.</span><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="net1p" data-ph="입력">그물·백색로프</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="net1o" data-ph="입력">시설팀(2명)</span></div></div></div>
+    <div class="tl-row"><div class="when">12:30<small>20분</small></div><div class="what"><b>백라이트 설치 · 조명 큐 확인</b><span>객석에서 십자가 실루엣이 보이는지 실사로 1회 확인.</span><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="net2p" data-ph="입력">플러드 2대</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="net2o" data-ph="입력">음향·조명팀</span></div></div></div>
+    <div class="tl-row hot"><div class="when">12:50<small>15분</small></div><div class="what"><b>안내위원 12명 최종 브리핑</b><span>수거 구역·고정 위치·신호 확인. <strong>이 브리핑을 건너뛰면 봉헌이 무너집니다.</strong></span><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="net3p" data-ph="입력">구역표·신호표</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="net3o" data-ph="입력">안내총괄</span></div></div></div>
+    <div class="tl-row hot"><div class="when">13:05<small>—</small></div><div class="what"><b>카드·집게 배치 완료</b><span>부서색 분류, 집게는 그물 앞 바구니 11개에 분산.</span><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="net4p" data-ph="입력">카드·집게·바구니 11</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="net4o" data-ph="입력">안내팀</span></div></div></div>
+    <div class="tl-row hot"><div class="when">13:20<small>—</small></div><div class="what"><b>회중 입장 시작</b><span>입장과 동시에 카드 배부. 14:00 시작 전 대부분 작성 완료.</span><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="net5p" data-ph="입력">카드·펜</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="net5o" data-ph="입력">안내팀</span></div></div></div>
   </div>
 
   <details class="spec">
@@ -577,18 +591,19 @@ a{color:var(--ember)}
     <tr><td>초안</td><td>“올해 경험하신 하나님은 어떤 분이신가요?”</td><td>하나님의 성품</td></tr>
     <tr><td><strong>개정</strong></td><td class="now">“주님이 지금 물으신다면, 나는 뭐라고 답할까?”</td><td><strong>나의 응답</strong></td></tr>
   </tbody></table></div>
-  <p class="note">초안의 전환(선물 → 주신 분)은 옳았다. 다만 여전히 <strong>3인칭 관찰</strong>이다. 개정안은 회중을 대답하는 자리로 끌어온다 — 요한복음 21장에서 베드로가 섰던 그 자리.</p>
+  <p class="note">초안의 전환(선물 → 주신 분)은 옳았으나 여전히 <strong>3인칭 관찰</strong>. 개정안은 회중을 베드로의 자리(요 21장)로 이끈다.</p>
+  <div class="edbox"><span><b>준비물</b><span class="ed" contenteditable="true" data-ed="preQp" data-ph="입력">질문카드 8종 인쇄물</span></span><span><b>담당</b><span class="ed" contenteditable="true" data-ed="preQo" data-ph="담당자 입력"></span></span></div>
 
   <h3>세대별 질문 카드 · 6종</h3>
   <div class="qgrid">
-    <div class="q"><div class="gen">영아부</div><div class="ask">이 아이를 주신 주님께, 부모로서 한 문장.</div><div class="why">부모 대필. 아이 이름으로 작성해 당일 그물에 건다.</div></div>
-    <div class="q"><div class="gen">유치부</div><div class="ask">하나님이 나를 꼭 안아주신 것 같은 때는 언제예요?</div><div class="why">선생님이 받아 적는다. 그림으로 답해도 좋다.</div></div>
-    <div class="q"><div class="gen">유년부</div><div class="ask">예수님이 나를 좋아하신다고 느낀 때는 언제였어요?</div><div class="why">‘받은 선물’이 아니라 ‘느낀 애정’을 묻는다.</div></div>
-    <div class="q"><div class="gen">초등부</div><div class="ask">내가 잘못했을 때, 예수님은 어떻게 하셨을까요?</div><div class="why">베드로 이야기를 미리 들려주고 답하게 한다.</div></div>
-    <div class="q"><div class="gen">중등부</div><div class="ask">내가 실수했을 때도 주님이 나를 놓지 않으신 순간은?</div><div class="why">3막(붙드심)의 정서를 미리 심는다.</div></div>
-    <div class="q"><div class="gen">고등부</div><div class="ask">내려놓기 가장 두려운 나의 ‘그물’은 무엇인가요?</div><div class="why">성적·진학·비교. 그물 퍼포먼스와 직결.</div></div>
-    <div class="q"><div class="gen">청년부</div><div class="ask">진로와 사랑 앞에서, 주님께 드릴 한 문장은?</div><div class="why">불안을 신앙 언어로 번역하게 한다.</div></div>
-    <div class="q"><div class="gen">장년부</div><div class="ask">지금까지 나를 붙드신 주님을, 무엇이라 부르시겠습니까?</div><div class="why">호칭을 묻는다 — 관계의 밀도가 드러난다. 1~4교구 공통.</div></div>
+    <div class="q"><div class="gen">영아부</div><div class="own-ed">담당: <span class="ed" contenteditable="true" data-ed="pq0" data-ph="담당자 입력"></span></div><div class="ask">이 아이를 주신 주님께, 부모로서 한 문장.</div><div class="why">부모 대필. 아이 이름으로 작성해 당일 그물에 건다.</div></div>
+    <div class="q"><div class="gen">유치부</div><div class="own-ed">담당: <span class="ed" contenteditable="true" data-ed="pq1" data-ph="담당자 입력"></span></div><div class="ask">하나님이 나를 꼭 안아주신 것 같은 때는 언제예요?</div><div class="why">선생님이 받아 적는다. 그림으로 답해도 좋다.</div></div>
+    <div class="q"><div class="gen">유년부</div><div class="own-ed">담당: <span class="ed" contenteditable="true" data-ed="pq2" data-ph="담당자 입력"></span></div><div class="ask">예수님이 나를 좋아하신다고 느낀 때는 언제였어요?</div><div class="why">‘받은 선물’이 아니라 ‘느낀 애정’을 묻는다.</div></div>
+    <div class="q"><div class="gen">초등부</div><div class="own-ed">담당: <span class="ed" contenteditable="true" data-ed="pq3" data-ph="담당자 입력"></span></div><div class="ask">내가 잘못했을 때, 예수님은 어떻게 하셨을까요?</div><div class="why">베드로 이야기를 미리 들려주고 답하게 한다.</div></div>
+    <div class="q"><div class="gen">중등부</div><div class="own-ed">담당: <span class="ed" contenteditable="true" data-ed="pq4" data-ph="담당자 입력"></span></div><div class="ask">내가 실수했을 때도 주님이 나를 놓지 않으신 순간은?</div><div class="why">3막(붙드심)의 정서를 미리 심는다.</div></div>
+    <div class="q"><div class="gen">고등부</div><div class="own-ed">담당: <span class="ed" contenteditable="true" data-ed="pq5" data-ph="담당자 입력"></span></div><div class="ask">내려놓기 가장 두려운 나의 ‘그물’은 무엇인가요?</div><div class="why">성적·진학·비교. 그물 퍼포먼스와 직결.</div></div>
+    <div class="q"><div class="gen">청년부</div><div class="own-ed">담당: <span class="ed" contenteditable="true" data-ed="pq6" data-ph="담당자 입력"></span></div><div class="ask">진로와 사랑 앞에서, 주님께 드릴 한 문장은?</div><div class="why">불안을 신앙 언어로 번역하게 한다.</div></div>
+    <div class="q"><div class="gen">장년부</div><div class="own-ed">담당: <span class="ed" contenteditable="true" data-ed="pq7" data-ph="담당자 입력"></span></div><div class="ask">지금까지 나를 붙드신 주님을, 무엇이라 부르시겠습니까?</div><div class="why">호칭을 묻는다 — 관계의 밀도가 드러난다. 1~4교구 공통.</div></div>
   </div>
 
   <h3>사전 영상 「그 날, 바닷가에서」 · 4분 30초</h3>
@@ -602,53 +617,55 @@ a{color:var(--ember)}
     <div class="shot"><div class="tc">4:10–4:30</div><div class="sc">실사 — 그물이 십자가에 걸리는 장면 → 예배 타이틀<div class="au">아웃트로</div></div></div>
   </div>
   <h4>제작 실무</h4>
-  <p>인터뷰 대상 부서당 2명, 총 <span class="mono">16명</span>. 1인당 촬영 5분. 장비는 스마트폰 + 삼각대로 충분하되 <strong>외장 마이크는 필수</strong> — 화질보다 음질이 무너지면 고백이 전달되지 않는다. 조명은 창가 자연광, 오후 3시 이전.</p>
+  <p>부서당 2명·총 <span class="mono">16명</span>, 1인 5분. 스마트폰+삼각대로 충분, <strong>외장 마이크 필수</strong>. 창가 자연광, 오후 3시 이전 촬영.</p>
+  <div class="edbox"><span><b>준비물</b><span class="ed" contenteditable="true" data-ed="preVp" data-ph="입력">스마트폰·삼각대·외장마이크</span></span><span><b>담당</b><span class="ed" contenteditable="true" data-ed="preVo" data-ph="입력">영상팀</span></span></div>
 
   <h3>주제곡 운용</h3>
   <p>아가파오 워십 「베드로의 고백 (Peter’s Confession)」을 <strong>찬양팀 특송 + 영상 BGM</strong> 두 곳에 쓴다. 회중 제창은 하지 않으므로 악보 배부는 불필요하나, 가사 PPT는 준비한다 — 특송 중 회중이 가사를 눈으로 따라가야 릴레이 고백으로 연결된다.</p>
-  <p class="note"><strong>저작권 확인 필요.</strong> 예배 내 연주(CCLI Copyright License)와 영상 삽입·온라인 송출(CCLI Streaming License)은 <strong>별개 라이선스</strong>다. 예배 실황이나 사전 영상을 유튜브에 올릴 계획이 있다면 D-6주까지 교회 라이선스 보유 범위를 확인할 것. 작사·작곡자 표기는 정식 악보 구매처에서 확인해 자막에 넣는다 — 이 기획서는 해당 정보를 확인하지 못했다.</p>
+  <div class="edbox"><span><b>준비물</b><span class="ed" contenteditable="true" data-ed="preMp" data-ph="입력">가사 PPT</span></span><span><b>담당</b><span class="ed" contenteditable="true" data-ed="preMo" data-ph="입력">찬양팀</span></span></div>
+  <p class="note"><strong>저작권 확인 필요.</strong> 예배 연주와 온라인 송출은 <strong>별개 라이선스</strong> — D-6주까지 교회 CCLI 범위 확인. 작사·작곡자 표기는 정식 악보 구매처 기준.</p>
 </section>
 
 <!-- ══ 05 전후 행사 ═════════════════════ -->
 <section id="around">
   <div class="sec-head"><span class="sec-num">06</span><h2>예배 전후 행사</h2></div>
-  <p class="lede">초안 5종을 모두 살리되, <strong>컨셉과 어긋나는 3종은 소재를 갈아끼운다</strong>. 예산은 늘지 않는다 — 오히려 예배 오브제를 재활용해 줄어든다.</p>
+  <p class="lede">초안 5종 유지, 3종만 소재 교체. 예배 오브제 재활용으로 예산 절감.</p>
 
   <div class="tbl-wrap"><table>
-    <tbody><tr><th>초안</th><th>개정</th><th>바꾸는 이유</th><th>변경 강도</th></tr>
+    <tbody><tr><th>초안</th><th>개정</th><th>바꾸는 이유</th><th>변경 강도</th><th>준비물</th><th>담당자</th></tr>
     <tr>
       <td class="was">은혜의 프레임</td>
       <td class="now">「그물 앞에서」 포토존</td>
-      <td>결실 배경 대신 <strong>예배에서 쓴 그물 십자가를 프레임째 로비로</strong>. 회중이 방금 자기 고백을 건 그물 앞에서 사진을 찍는다. 1주간 전시.</td>
-      <td>소재 교체<br><span style="color:var(--ok);font-size:12px">제작비 절감</span></td>
+      <td><strong>예배 그물을 프레임째 로비로</strong> 옮겨 포토존으로. 1주간 전시.</td>
+      <td>소재 교체<br><span style="color:var(--ok);font-size:12px">제작비 절감</span></td><td><span class="ed" contenteditable="true" data-ed="ev0p" data-ph="입력">그물 재활용·백라이트 1·여분카드</span></td><td><span class="ed" contenteditable="true" data-ed="ev0o" data-ph="입력">시설팀</span></td>
     </tr>
     <tr>
       <td>동행네컷</td>
       <td class="now">유지 · 프레임 문구만 교체</td>
-      <td>“예수님과 함께 걷겠습니다”. 4컷 중 1컷은 <strong>다른 세대와 함께</strong> 찍는 미션.</td>
-      <td>문구만</td>
+      <td>“예수님과 함께 걷겠습니다”. 4컷 중 1컷은 <strong>다른 세대와 함께</strong>.</td>
+      <td>문구만</td><td><span class="ed" contenteditable="true" data-ed="ev1p" data-ph="입력">네컷 기기·문구 프레임</span></td><td><span class="ed" contenteditable="true" data-ed="ev1o" data-ph="입력">행사팀</span></td>
     </tr>
     <tr>
       <td class="was">감사 테이스팅</td>
       <td class="now">「디베랴의 조찬」</td>
-      <td>요 21:9 — 주님이 숯불에 생선과 떡을 구워두고 기다리셨다. 구운 빵 + 따뜻한 국물 + 차로 구성하면 <strong>메뉴 자체가 본문</strong>이 된다.</td>
-      <td>메뉴 재구성</td>
+      <td>요 21:9 — 구운 빵 + 따뜻한 국물 + 차. <strong>메뉴 자체가 본문</strong>.</td>
+      <td>메뉴 재구성</td><td><span class="ed" contenteditable="true" data-ed="ev2p" data-ph="입력">빵·국물·차·배식용품</span></td><td><span class="ed" contenteditable="true" data-ed="ev2o" data-ph="입력">조찬팀</span></td>
     </tr>
     <tr>
       <td>감사 나눔 스토어</td>
       <td class="now">유지</td>
-      <td>수익금 사용처 명시 원칙 그대로. 컨셉과 충돌 없음.</td>
-      <td>없음</td>
+      <td>수익금 사용처 명시. 컨셉과 충돌 없음.</td>
+      <td>없음</td><td><span class="ed" contenteditable="true" data-ed="ev3p" data-ph="입력">판매물품·거스름돈·가격표</span></td><td><span class="ed" contenteditable="true" data-ed="ev3o" data-ph="입력">스토어팀</span></td>
     </tr>
     <tr>
       <td class="was">은혜의 고리 만들기</td>
       <td class="now">「매듭 팔찌」</td>
-      <td>슈링크아트 → <strong>그물 매듭</strong>(옭매듭·8자매듭) 팔찌. 모티브가 일치하고 재료비가 더 싸며 오븐이 필요 없다.</td>
-      <td>체험 교체<br><span style="color:var(--ok);font-size:12px">장비 불필요</span></td>
+      <td>슈링크아트 → <strong>그물 매듭</strong> 팔찌. 재료비가 싸고 오븐 불필요.</td>
+      <td>체험 교체<br><span style="color:var(--ok);font-size:12px">장비 불필요</span></td><td><span class="ed" contenteditable="true" data-ed="ev4p" data-ph="입력">매듭끈·가위·샘플</span></td><td><span class="ed" contenteditable="true" data-ed="ev4o" data-ph="입력">체험팀</span></td>
     </tr>
   </tbody></table></div>
 
-  <p class="note"><strong>인력이 부족하면 5종을 다 하지 마라.</strong> 우선순위는 ① 그물 포토존 ② 디베랴의 조찬 ③ 감사 나눔 스토어. 네컷과 매듭 팔찌는 봉사자 확보 상황을 D-2주에 보고 결정한다.</p>
+  <p class="note"><strong>인력 부족 시 3종만:</strong> ① 그물 포토존 ② 디베랴의 조찬 ③ 나눔 스토어. 네컷·팔찌는 D-2주 봉사자 현황 보고 결정.</p>
 </section>
 
 <!-- ══ 06 일정 ══════════════════════════ -->
@@ -695,17 +712,17 @@ a{color:var(--ember)}
 <script>
 /* ── 데이터 ─────────────────────────────── */
 var PLAN_A = [
-  {m:1,name:"예배 선포 영상 「그 날, 바닷가에서」",min:5,tag:"교체",desc:"빈 그물에서 시작해 <mark>“네가 나를 사랑하느냐”</mark>로 닫는 4분 30초. 초안의 카운트다운을 대체한다."},
-  {m:1,name:"부르심 선포 · 기원",min:3,tag:"신설",desc:"눅 5:11 봉독과 함께 예배 선포. “오늘 우리는 받은 것을 세러 온 것이 아니라, 부르신 분께 답하러 왔습니다.”"},
-  {m:2,name:"찬양 1부 — 부르심과 동행",min:13,tag:"",desc:"3곡. 밝은 톤, 온세대 공통 찬양. 조명 풀."},
-  {m:2,name:"세대통합 대표기도",min:5,tag:"",desc:"영아부(부모 대독) + 장년부 대표가 함께 제단에 올라 교차 기도. 초안 연출 유지."},
-  {m:3,name:"찬양 2부 — 실패와 붙드심",min:9,tag:"신설",desc:"2곡. 조명 단계적 다운. <mark>9분 초과 금지</mark> — 넘어가면 회개예배가 된다."},
-  {m:3,name:"8부서 릴레이 성경봉독 (요 21:1–19)",min:4,tag:"신설",desc:"부서별로 한 단락씩 30초. 마지막 “내 양을 먹이라”는 장년부 대표."},
-  {m:4,name:"설교 「네가 나를 사랑하느냐」",min:24,tag:"교체",desc:"본문 요 21:15–17. 방점은 <mark>“실패한 나를 놓지 않으셨다”</mark>. 24분 하드컷."},
-  {m:5,name:"찬양팀 특송 「베드로의 고백」",min:5,tag:"신설",desc:"이 동안 회중이 고백 카드를 통로로 전달, 안내위원 12명 수거 완료."},
-  {m:5,name:"세대별 릴레이 고백",min:4,tag:"신설",desc:"8명 × 25초. 마지막에 <mark>전 회중 제창</mark> — “내가 주를 사랑합니다.”"},
-  {m:5,name:"그물 내려놓기 · 고백 카드 봉헌",min:5,tag:"교체",desc:"안내위원 11명 동시 고정(3분) → 조명 전환, 백라이트로 십자가 발광(2분). 물질 헌금은 별도 봉헌함."},
-  {m:6,name:"파송 「내 양을 먹이라」 · 축도",min:3,tag:"신설",desc:"요 21:19로 파송. 광고는 주보로 이관."}
+  {m:1,name:"예배 선포 영상 「그 날, 바닷가에서」",min:5,tag:"교체",desc:"빈 그물에서 시작해 <mark>“네가 나를 사랑하느냐”</mark>로 닫는 4분 30초. 초안의 카운트다운을 대체한다.",prep:"영상 파일·프로젝터·음향 점검",own:"영상팀"},
+  {m:1,name:"부르심 선포 · 기원",min:3,tag:"신설",desc:"눅 5:11 봉독과 함께 예배 선포. “오늘 우리는 받은 것을 세러 온 것이 아니라, 부르신 분께 답하러 왔습니다.”",prep:"마이크·봉독 성경",own:"사회자"},
+  {m:2,name:"찬양 1부 — 부르심과 동행",min:13,tag:"",desc:"3곡. 밝은 톤, 온세대 공통 찬양. 조명 풀.",prep:"악보·찬양 PPT·조명 풀",own:"찬양팀"},
+  {m:2,name:"세대통합 대표기도",min:5,tag:"",desc:"영아부(부모 대독) + 장년부 대표가 함께 제단에 올라 교차 기도. 초안 연출 유지.",prep:"기도문·마이크 2",own:"영아부·장년부 대표"},
+  {m:3,name:"찬양 2부 — 실패와 붙드심",min:9,tag:"신설",desc:"2곡. 조명 단계적 다운. <mark>9분 초과 금지</mark> — 넘어가면 회개예배가 된다.",prep:"조명 페이더",own:"찬양팀·조명팀"},
+  {m:3,name:"8부서 릴레이 성경봉독 (요 21:1–19)",min:4,tag:"신설",desc:"부서별로 한 단락씩 30초. 마지막 “내 양을 먹이라”는 장년부 대표.",prep:"봉독 순서지·마이크",own:"8부서 봉독자"},
+  {m:4,name:"설교 「네가 나를 사랑하느냐」",min:24,tag:"교체",desc:"본문 요 21:15–17. 방점은 <mark>“실패한 나를 놓지 않으셨다”</mark>. 24분 하드컷.",prep:"설교 PPT·타이머",own:"설교자"},
+  {m:5,name:"찬양팀 특송 「베드로의 고백」",min:5,tag:"신설",desc:"이 동안 회중이 고백 카드를 통로로 전달, 안내위원 12명 수거 완료.",prep:"특송 음향·수거 바구니 11",own:"찬양팀·안내위원"},
+  {m:5,name:"세대별 릴레이 고백",min:4,tag:"신설",desc:"8명 × 25초. 마지막에 <mark>전 회중 제창</mark> — “내가 주를 사랑합니다.”",prep:"스탠드마이크·발판·대본카드·백업음원",own:"8명 고백자·음향팀"},
+  {m:5,name:"그물 내려놓기 · 고백 카드 봉헌",min:5,tag:"교체",desc:"안내위원 11명 동시 고정(3분) → 조명 전환, 백라이트로 십자가 발광(2분). 물질 헌금은 별도 봉헌함.",prep:"집게·바구니·백라이트",own:"안내위원 11명·조명팀"},
+  {m:6,name:"파송 「내 양을 먹이라」 · 축도",min:3,tag:"신설",desc:"요 21:19로 파송. 광고는 주보로 이관.",prep:"주보(광고)",own:"인도자"}
 ];
 var PLAN_B = null;
 var MC = ["","var(--m1)","var(--m2)","var(--m3)","var(--m4)","var(--m5)","var(--m6)"];
@@ -766,7 +783,8 @@ function renderRail(el,rows){
       +'<div class="bar"></div>'
       +'<div class="body"><div class="name">'+r.name
       +(r.tag?'<span class="tag">'+r.tag+'</span>':'')+'</div>'
-      +'<div class="desc"><span style="color:'+MC[r.m]+';font-weight:600">'+MN[r.m]+'</span> · '+r.desc+'</div></div>'
+      +'<div class="desc"><span style="color:'+MC[r.m]+';font-weight:600">'+MN[r.m]+'</span> · '+r.desc+'</div>'
+      +'<div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap'+i+'" data-ph="입력">'+r.prep+'</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao'+i+'" data-ph="입력">'+r.own+'</span></div></div>'
       +'<div class="min mono">'+r.min+'분</div></div>';
     acc+=r.min;
   }
@@ -833,7 +851,7 @@ tl.innerHTML=th;
   for(var i=0;i<CHECKS.length;i++){var c=CHECKS[i];
     h+='<div class="ck"><input type="checkbox" id="'+c.id+'" data-id="'+c.id+'">'
       +'<label for="'+c.id+'">'+c.t+'<small>'+c.s+'</small></label>'
-      +'<span class="owner">'+c.o+'</span></div>';}
+      +'<span class="owner ed" contenteditable="true" data-ed="cko_'+c.id+'" data-ph="담당">'+c.o+'</span></div>';}
   list.innerHTML=h;
 
   function paint(){
@@ -856,6 +874,15 @@ tl.innerHTML=th;
     paint();
     try{ localStorage.setItem(LS,JSON.stringify(state)); }catch(err){}
   });
+})();
+
+/* ── 입력칸 자동저장 ────────────────────── */
+(function(){
+  var ELS='ows2026.edits',EST={};
+  try{EST=JSON.parse(localStorage.getItem(ELS)||'{}')||{}}catch(e){}
+  function epaint(){var els=document.querySelectorAll('[data-ed]');for(var i=0;i<els.length;i++){var k=els[i].getAttribute('data-ed');if(EST[k]!=null)els[i].textContent=EST[k];}}
+  epaint();
+  document.addEventListener('input',function(e){var x=e.target;if(x&&x.dataset&&x.dataset.ed){EST[x.dataset.ed]=x.textContent;try{localStorage.setItem(ELS,JSON.stringify(EST))}catch(_){}}});
 })();
 </script>
 

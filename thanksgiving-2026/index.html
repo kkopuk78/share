@@ -284,6 +284,15 @@ details.spec .tbl-wrap{margin-top:10px}
 .own-ed{margin-top:6px;font-size:12px;color:var(--dim)}
 .edit-hint{font-size:12px;color:var(--faint)}
 
+/* ── photozone ────────────────── */
+.photoviz{margin:12px 0;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
+.photoviz img{width:100%;height:auto;display:block}
+.photoviz figcaption{padding:8px 14px;font-size:12.5px;color:var(--dim)}
+.promptbox{margin:12px 0;border:1px solid var(--line);border-radius:10px;background:var(--sunken);padding:12px 14px}
+.promptbox .ph{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.promptbox .ph b{font-size:13.5px}
+.copybtn{font-size:12px;border:1px solid var(--line2);background:var(--surface);border-radius:6px;padding:2px 10px;cursor:pointer}
+.promptbox pre{white-space:pre-wrap;font-size:12.5px;line-height:1.65;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:0 0 8px;font-family:inherit}
 /* ── risk ──────────────────────────────── */
 .risks{display:flex; flex-direction:column; gap:0; border-top:1px solid var(--line); margin-top:10px}
 .risk{display:grid; grid-template-columns:auto 1fr; gap:0 15px; padding:16px 0; border-bottom:1px solid var(--line)}
@@ -320,7 +329,7 @@ a{color:var(--ember)}
     <p class="sub">감사는 받은 것에 대한 계산이 아니라, 나를 사랑하신 분께 드리는 응답이다.</p>
     <dl class="hero-meta">
       <div><dt>예배일</dt><dd>2026. 11. 15. (주일) <strong>오후 2시</strong></dd></div>
-      <div><dt>총 길이</dt><dd class="mono">90분 (13:50–15:20)</dd></div>
+      <div><dt>총 길이</dt><dd class="mono">90분 틀 (13:50–15:20)</dd></div>
       <div><dt>대상</dt><dd>온세대 400~450명 · 반석관</dd></div>
       <div><dt>주제곡</dt><dd>아가파오 워십 「베드로의 고백」</dd></div>
     </dl>
@@ -407,7 +416,7 @@ a{color:var(--ember)}
 <!-- ══ 02 순서 ══════════════════════════ -->
 <section id="order">
   <div class="sec-head"><span class="sec-num">02</span><h2>예배 순서</h2></div>
-  <p class="lede"><strong>첨부안 6순서 준수 · 90분 (13:50–15:20)</strong> — 각 순서에 「베드로의 고백」 서사를 입힌다. 그물 퍼포먼스(선포·영상 직후)와 클라이맥스(마무리찬양)를 포함한다.</p>
+  <p class="lede"><strong>첨부안 6순서 준수 · 90분 틀 (13:50–15:20)</strong> — 각 순서에 「베드로의 고백」 서사를 입힌다. 그물 퍼포먼스(선포·영상 직후)와 클라이맥스(마무리찬양)를 포함한다.</p>
 
   <div class="switch" role="group" aria-label="기획안 선택" hidden>
     <button id="btn-a" aria-pressed="true">1안 확정 · 전면 재구성</button>
@@ -416,8 +425,8 @@ a{color:var(--ember)}
 
   <div id="pane-a">
     <div class="plan-note"><b>첨부안 순서 + 컨셉 적용.</b> 시간·담당은 첨부안 그대로, 내용만 베드로 서사로 채운다. 설교는 「네가 나를 사랑하느냐」(요 21:15–17) 20분.</div>
-    <div class="rail" id="rail-a"><div class="cue" style="--mc:var(--m2)"><div class="t mono">0′</div><div class="bar"></div><div class="body"><div class="name">준비찬양</div><div class="desc"><span style="color:var(--m2);font-weight:600">2막 동행</span> · (13:50–14:00) 1교구 찬양팀. 부르심·동행 찬양. 입장 중 고백카드 작성 마무리.</div><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap0" data-ph="입력">찬양 PPT·악보</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao0" data-ph="입력">1교구 찬양팀(이명훈 안수집사)</span></div></div><div class="min mono">10분</div></div><div class="cue new" style="--mc:var(--m1)"><div class="t mono">10′</div><div class="bar"></div><div class="body"><div class="name">예배선포 및 영상<span class="tag">핵심</span></div><div class="desc"><span style="color:var(--m1);font-weight:600">1막 부르심</span> · (14:00–14:10) 온세대 감사스토리 + 「그 날, 바닷가에서」. 후반 3분 그물 이동(입구→머리 위→강단).</div><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap1" data-ph="입력">영상 파일·음향·프로젝터</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao1" data-ph="입력">방송부·스튜디오BS</span></div></div><div class="min mono">10분</div></div><div class="cue" style="--mc:var(--m2)"><div class="t mono">20′</div><div class="bar"></div><div class="body"><div class="name">대표기도</div><div class="desc"><span style="color:var(--m2);font-weight:600">2막 동행</span> · (14:10–14:15) 어린이 + 샬롬부 2명 기도.</div><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap2" data-ph="입력">기도문·마이크</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao2" data-ph="입력">어린이·샬롬부(미정)</span></div></div><div class="min mono">5분</div></div><div class="cue" style="--mc:var(--m3)"><div class="t mono">25′</div><div class="bar"></div><div class="body"><div class="name">찬양</div><div class="desc"><span style="color:var(--m3);font-weight:600">3막 붙드심</span> · (14:15–14:50) 1교구 찬양팀. 동행→붙드심 흐름.</div><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap3" data-ph="입력">찬양 PPT·조명</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao3" data-ph="입력">1교구 찬양팀(이명훈 안수집사)</span></div></div><div class="min mono">35분</div></div><div class="cue new" style="--mc:var(--m4)"><div class="t mono">1:00′</div><div class="bar"></div><div class="body"><div class="name">말씀 및 축도<span class="tag">핵심</span></div><div class="desc"><span style="color:var(--m4);font-weight:600">4막 질문</span> · (14:50–15:10) 「네가 나를 사랑하느냐」(요 21:15–17) + 축도. 20분 엄수.</div><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap4" data-ph="입력">설교 PPT·타이머</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao4" data-ph="입력">담임목사님</span></div></div><div class="min mono">20분</div></div><div class="cue new" style="--mc:var(--m5)"><div class="t mono">1:20′</div><div class="bar"></div><div class="body"><div class="name">마무리찬양<span class="tag">클라이맥스</span></div><div class="desc"><span style="color:var(--m5);font-weight:600">5막 고백</span> · (15:10–15:20) 특송 「베드로의 고백」+ 릴레이 고백 + 십자가 점등 + 전 회중 제창.</div><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap5" data-ph="입력">특송 음향·백라이트</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao5" data-ph="입력">1교구 찬양팀·안내위원</span></div></div><div class="min mono">10분</div></div>
-    <div class="cue-total"><span>합계</span><b>90분 (13:50–15:20)</b></div><p class="note">※ 13:50 시작 기준 · 첨부안 시간 그대로. <span class="edit-hint">점선 칸은 클릭 입력 · 이 브라우저에 자동 저장.</span></p>
+    <div class="rail" id="rail-a"><div class="cue" style="--mc:var(--m2)"><div class="t mono">0′</div><div class="bar"></div><div class="body"><div class="name">준비찬양</div><div class="desc"><span style="color:var(--m2);font-weight:600">2막 동행</span> · (13:50–13:55) 잔잔한 CCM 음원 재생 5분. 이후 입장·묵상 후 14:00 선포.</div><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap0" data-ph="입력">CCM 음원·음향</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao0" data-ph="입력">음향팀</span></div></div><div class="min mono">5분</div></div><div class="cue new" style="--mc:var(--m1)"><div class="t mono">10′</div><div class="bar"></div><div class="body"><div class="name">예배선포 및 영상<span class="tag">핵심</span></div><div class="desc"><span style="color:var(--m1);font-weight:600">1막 부르심</span> · (14:00–14:10) 온세대 감사스토리 + 「그 날, 바닷가에서」. 후반 3분 그물 이동(입구→머리 위→강단).</div><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap1" data-ph="입력">영상 파일·음향·프로젝터</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao1" data-ph="입력">방송부·스튜디오BS</span></div></div><div class="min mono">10분</div></div><div class="cue" style="--mc:var(--m2)"><div class="t mono">20′</div><div class="bar"></div><div class="body"><div class="name">대표기도</div><div class="desc"><span style="color:var(--m2);font-weight:600">2막 동행</span> · (14:10–14:15) 어린이 + 샬롬부 2명 기도.</div><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap2" data-ph="입력">기도문·마이크</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao2" data-ph="입력">어린이·샬롬부(미정)</span></div></div><div class="min mono">5분</div></div><div class="cue" style="--mc:var(--m3)"><div class="t mono">25′</div><div class="bar"></div><div class="body"><div class="name">찬양</div><div class="desc"><span style="color:var(--m3);font-weight:600">3막 붙드심</span> · (14:15–14:50) 1교구 찬양팀. 동행→붙드심 흐름.</div><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap3" data-ph="입력">찬양 PPT·조명</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao3" data-ph="입력">1교구 찬양팀(이명훈 안수집사)</span></div></div><div class="min mono">35분</div></div><div class="cue new" style="--mc:var(--m4)"><div class="t mono">1:00′</div><div class="bar"></div><div class="body"><div class="name">말씀 및 축도<span class="tag">핵심</span></div><div class="desc"><span style="color:var(--m4);font-weight:600">4막 질문</span> · (14:50–15:10) 「네가 나를 사랑하느냐」(요 21:15–17) + 축도. 20분 엄수.</div><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap4" data-ph="입력">설교 PPT·타이머</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao4" data-ph="입력">담임목사님</span></div></div><div class="min mono">20분</div></div><div class="cue new" style="--mc:var(--m5)"><div class="t mono">1:20′</div><div class="bar"></div><div class="body"><div class="name">마무리찬양<span class="tag">클라이맥스</span></div><div class="desc"><span style="color:var(--m5);font-weight:600">5막 고백</span> · (15:10–15:20) 특송 「베드로의 고백」+ 릴레이 고백 + 십자가 점등 + 전 회중 제창.</div><div class="po"><span class="pl">준비물</span><span class="ed" contenteditable="true" data-ed="oap5" data-ph="입력">특송 음향·백라이트</span><span class="pl">담당</span><span class="ed" contenteditable="true" data-ed="oao5" data-ph="입력">1교구 찬양팀·안내위원</span></div></div><div class="min mono">10분</div></div>
+    <div class="cue-total"><span>합계</span><b>85분 + 여유 5분 (13:50–15:20 틀)</b></div><p class="note">※ 13:50 시작 기준 · 준비찬양 5분 후 13:55–14:00 입장·묵상 여유. <span class="edit-hint">점선 칸은 클릭 입력 · 이 브라우저에 자동 저장.</span></p>
   </div>
 
   <div id="pane-b" hidden></div>
@@ -621,57 +630,10 @@ a{color:var(--ember)}
     <tr><td>은혜의 고리 만들기 (유지)</td><td>키링 제작 체험(유료).</td><td>반석관 로비</td><td><span class="ed" contenteditable="true" data-ed="r0p" data-ph="입력">키링 재료·테이블</span></td><td><span class="ed" contenteditable="true" data-ed="r0o" data-ph="입력">이진선 집사</span></td></tr>
   </tbody></table></div>
   <p class="note">첨부 기타 프로그램(감사소식나무·감사편지칠판·놀이존)은 각 담당 부서 기존안대로 운영.</p>
-  <h3>포토존 예시 이미지 — 「디베랴 바닷가에서」</h3>
+  <h3>포토존 시안 — 「디베랴 바닷가에서」</h3>
   <figure class="photoviz">
-    <svg viewBox="0 0 600 360" role="img" aria-label="디베랴 바닷가 포토존 예시. 새벽 바다, 숯불과 생선, 어망과 물고기 카드">
-      <defs>
-        <linearGradient id="dawn" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22395e"/><stop offset="0.55" stop-color="#7d90b8"/><stop offset="0.78" stop-color="#f2b879"/><stop offset="1" stop-color="#f7ddae"/></linearGradient>
-        <radialGradient id="fglow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffcf8a" stop-opacity="0.85"/><stop offset="1" stop-color="#ffcf8a" stop-opacity="0"/></radialGradient>
-      </defs>
-      <rect x="0" y="0" width="600" height="190" fill="url(#dawn)"/>
-      <circle cx="300" cy="178" r="30" fill="#ffe9c4"/>
-      <rect x="0" y="190" width="600" height="44" fill="#4d6f96"/>
-      <rect x="0" y="202" width="600" height="5" fill="#cfe2f2" opacity="0.8"/>
-      <rect x="0" y="234" width="600" height="126" fill="#d9bd93"/>
-      <ellipse cx="430" cy="300" rx="120" ry="26" fill="#ffcf8a" opacity="0.35"/>
-      <g>
-        <rect x="60" y="60" width="12" height="180" rx="3" fill="#7d6749"/>
-        <rect x="180" y="60" width="12" height="180" rx="3" fill="#7d6749"/>
-        <rect x="48" y="48" width="156" height="14" rx="4" fill="#7d6749"/>
-        <g stroke="#8b8f97" stroke-width="1">
-          <path d="M66 70H186M66 92H186M66 114H186M66 136H186M66 158H186M66 180H186M66 202H186M66 224H186"/>
-          <path d="M80 62V238M100 62V238M120 62V238M140 62V238M160 62V238M178 62V238"/>
-        </g>
-        <g>
-          <rect x="86" y="100" width="30" height="20" rx="3" fill="#eab89f"/>
-          <rect x="122" y="140" width="30" height="20" rx="3" fill="#a8d2bb"/>
-          <rect x="140" y="100" width="30" height="20" rx="3" fill="#efd49f"/>
-          <rect x="100" y="176" width="30" height="20" rx="3" fill="#a4c8d6"/>
-        </g>
-        <text x="126" y="42" font-size="16" font-weight="700" text-anchor="middle" fill="#1b2434">내가 주를 사랑합니다 · 요 21:17</text>
-      </g>
-      <g>
-        <ellipse cx="430" cy="300" rx="86" ry="20" fill="#8b8f97"/>
-        <ellipse cx="430" cy="297" rx="72" ry="15" fill="#5d6674"/>
-        <rect x="392" y="290" width="76" height="7" rx="3" fill="#4a3a2c" transform="rotate(8 430 293)"/>
-        <rect x="392" y="290" width="76" height="7" rx="3" fill="#4a3a2c" transform="rotate(-8 430 293)"/>
-        <ellipse cx="430" cy="296" rx="70" ry="44" fill="url(#fglow)"/>
-        <path d="M415 296 C 410 280, 418 272, 422 260 C 428 272, 436 278, 432 296 Z" fill="#e8590c"/>
-        <path d="M430 296 C 428 284, 434 276, 437 268 C 441 278, 445 286, 442 296 Z" fill="#ffd43b"/>
-        <g stroke="#3a2c1e" stroke-width="2"><path d="M388 286H472M388 292H472"/></g>
-        <g>
-          <ellipse cx="415" cy="281" rx="14" ry="6" fill="#c98a3a"/>
-          <polygon points="401,281 393,275 393,287" fill="#a34f22"/>
-          <ellipse cx="448" cy="281" rx="14" ry="6" fill="#c98a3a"/>
-          <polygon points="462,281 470,275 470,287" fill="#a34f22"/>
-        </g>
-        <ellipse cx="500" cy="292" rx="22" ry="9" fill="#e8c98f"/>
-        <ellipse cx="528" cy="296" rx="18" ry="8" fill="#e8c98f"/>
-        <rect x="484" y="298" width="64" height="10" rx="3" fill="#9a8a76"/>
-      </g>
-      <text x="430" y="340" font-size="11" text-anchor="middle" fill="#5d6674">숯불 · 생선과 떡 (요 21:9) — 어망 · 새벽 바다</text>
-    </svg>
-    <figcaption>예시 구성 — 새벽 바다 배경막 + 현수막 문구 + 어망(물고기 카드) + 숯불 세트(생선·떡). 실물은 아래 프롬프트로 생성하거나 포토존 업체에 의뢰.</figcaption>
+    <img src="./photozone.jpg" alt="디베랴 바닷가 포토존 시안. 숯불과 생선, 어망, 새벽 바다와 내가 주를 사랑합니다 문구" loading="lazy">
+    <figcaption>포토존 시안 (확정) — 「디베랴 바닷가에서」. 새벽 바다 배경 + 숯불 세트(생선·떡) + 어망. 아래 프롬프트는 변형본 제작용으로 보관.</figcaption>
   </figure>
   <div class="promptbox">
     <div class="ph"><b>이미지 생성 프롬프트 (복사해서 사용)</b><button class="copybtn" data-copy="ppko">한글 복사</button><button class="copybtn" data-copy="ppen">영문 복사</button></div>
@@ -714,7 +676,7 @@ a{color:var(--ember)}
 </section>
 
 <footer>
-  <p>2026 온세대 추수감사예배 기획 개정안 · 컨셉「베드로의 고백」 — 초안(12p) 기반 재구성. 예배일 2026. 11. 15. (주일) 13:50–15:20 (준비찬양 포함 90분) · 반석관.</p>
+  <p>2026 온세대 추수감사예배 기획 개정안 · 컨셉「베드로의 고백」 — 초안(12p) 기반 재구성. 예배일 2026. 11. 15. (주일) 13:50–15:20 (90분 틀) · 반석관.</p>
   <p style="margin-top:8px">주제곡 「베드로의 고백 (Peter’s Confession)」 아가파오 워십. 저작권자 표기 및 라이선스 범위는 정식 악보 구매처에서 확인 후 반영할 것.</p>
 </footer>
 
@@ -725,7 +687,7 @@ a{color:var(--ember)}
 <script>
 /* ── 데이터 ─────────────────────────────── */
 var PLAN_A = [
-  {m:2,name:"준비찬양",min:10,tag:"",desc:"(13:50–14:00) 1교구 찬양팀. 부르심·동행 찬양. 입장 중 고백카드 작성 마무리.",prep:"찬양 PPT·악보",own:"1교구 찬양팀(이명훈 안수집사)"},
+  {m:2,name:"준비찬양",min:5,tag:"",desc:"(13:50–13:55) 잔잔한 CCM 음원 재생 5분. 이후 입장·묵상 후 14:00 선포.",prep:"CCM 음원·음향",own:"음향팀"},
   {m:1,name:"예배선포 및 영상",min:10,tag:"핵심",desc:"(14:00–14:10) 온세대 감사스토리 + 「그 날, 바닷가에서」. 후반 3분 그물 이동(입구→머리 위→강단).",prep:"영상 파일·음향·프로젝터",own:"방송부·스튜디오BS"},
   {m:2,name:"대표기도",min:5,tag:"",desc:"(14:10–14:15) 어린이 + 샬롬부 2명 기도.",prep:"기도문·마이크",own:"어린이·샬롬부(미정)"},
   {m:3,name:"찬양",min:35,tag:"",desc:"(14:15–14:50) 1교구 찬양팀. 동행→붙드심 흐름.",prep:"찬양 PPT·조명",own:"1교구 찬양팀(이명훈 안수집사)"},
